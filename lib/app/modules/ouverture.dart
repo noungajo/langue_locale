@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:sizer/sizer.dart';
+import 'package:lottie/lottie.dart';
 
 class Ouverture extends StatelessWidget {
-  Ouverture({super.key});
-  final Storage storage = Storage();
+  const Ouverture({super.key});
 
   @override
   Widget build(BuildContext context) {
-    controller.startAnimation();
     return Scaffold(
       body: Center(
-        child: Lottie.asset(ouverture, height: loginImage),
+        child: Lottie.asset("ouverture", height: 10),
       ),
     );
   }

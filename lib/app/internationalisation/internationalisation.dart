@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
-import 'package:nlp_one/app/internationalisation/i18_en_EN.dart';
-import 'package:nlp_one/app/internationalisation/i18_fr_FR.dart';
+
+import 'i18_en_EN.dart';
+import 'i18_fr_FR.dart';
 
 class Internationalisation extends Translations {
   @override

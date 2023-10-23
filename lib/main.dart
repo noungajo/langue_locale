@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
-import 'package:nlp_one/app/routes.dart';
 import 'package:sizer/sizer.dart';
 
 import 'app/internationalisation/internationalisation.dart';
+import 'app/routes.dart';
 
 void main() {
   runApp(const MyApp());
