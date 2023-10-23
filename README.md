@@ -1,16 +1,13 @@
-# nlp_one
+# Reenamuna
+Notre projet, le "Jeu d'Apprentissage des Langues Camerounaises : Douala et Nufi pour Enfants," est une initiative ludique et éducative conçue pour permettre aux enfants de découvrir et de maîtriser les langues douala et nufi, qui sont des éléments importants de la richesse culturelle du Cameroun. Le jeu vise à rendre l'apprentissage de ces langues amusant, interactif et accessible aux jeunes apprenants.
+Le nom du projet Ree Na Muna vient de la langue nufi gheu11 qui signifie langage et Na Muna du douala qui signifie de l'enfant. 
 
-A new Flutter project.
+## Objectifs
 
-## Getting Started
+- Faciliter l'apprentissage précoce des langues camerounaises, contribuant ainsi à la préservation de la diversité linguistique du pays.
+- Encourager l'intérêt des enfants pour leur propre culture et leur patrimoine linguistique.
+- Renforcer les compétences linguistiques des enfants de manière amusante et engageante.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+[free images compressor](https://imagecompressor.com/)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
