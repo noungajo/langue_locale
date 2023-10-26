@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         fallbackLocale:
             const Locale("en", "EN"), //fallback locale if wrong local not found
         supportedLocales: const [Locale('fr'), Locale('en'), Locale('ge')],
-
+	debugShowCheckedModeBanner: false,
         initialRoute: AppRoutes
             .initial, // Définissez la route initiale à partir de AppRoutes
         getPages:

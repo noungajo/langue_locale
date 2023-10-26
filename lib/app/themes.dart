@@ -1,74 +1,100 @@
+
 import 'package:flutter/material.dart';
-import 'package:reenamuna/constants/colors.dart';
-import 'package:sizer/sizer.dart';
+
+import '../constants/colors.dart';
 
 
-
-class TAppTheme {
-  TAppTheme._();
+class ThemeClass{
   static ThemeData lightTheme = ThemeData(
-      brightness: Brightness.light,
-      textTheme:  TextTheme(
-          titleLarge: TextStyle(
-        fontFamily: "lato",
+    useMaterial3:true,
+   
+ 
+    //----------------------------------------------------------------------------------
+     textTheme:  TextTheme(
+      // Personnalisez le style du texte
+        titleLarge: TextStyle(
         fontWeight: FontWeight.bold,
-        fontSize: 16.sp,
-        color: lightTextColor),
-        titleMedium:
-        TextStyle(fontFamily: "lato", fontSize: 15.sp, color: lightTextColor),
-        titleSmall: TextStyle(fontFamily: "lato", fontSize: 14.sp, color: lightTextColor),
-        bodyLarge: TextStyle(
-      fontFamily: "lato",
-      fontSize: 12.sp,
-      color: lightTextColor,
-      fontWeight: FontWeight.bold,
-    ),
-    bodyMedium: TextStyle(
-      fontFamily: "lato",
-      fontSize: 12.sp,
-      color: lightTextColor,
-    ),
-    bodySmall: TextStyle(
-      fontFamily: "lato",
-      fontSize: 11.sp,
-      color: lightTextColor,
-    ),
-      ),
-      appBarTheme: AppBarTheme(backgroundColor: lightAppbarColor,iconTheme:IconThemeData(color: lightAppbarIconColor),centerTitle: true,titleTextStyle: TextStyle(fontFamily: "lato", fontSize: 15.sp, color: lightAppbarTextColor), ),
-
-      iconTheme: IconThemeData(color: lightIconColor)
-
-      );
-  static ThemeData darkTheme = ThemeData(
-      brightness: Brightness.dark,
-      textTheme: TextTheme(
-          titleLarge: TextStyle(
         fontFamily: "lato",
-        fontWeight: FontWeight.bold,
-        fontSize: 16.sp,
-        color: darkTextColor),
-        titleMedium:
-        TextStyle(fontFamily: "lato", fontSize: 15.sp, color: darkTextColor),
-        titleSmall: TextStyle(fontFamily: "lato", fontSize: 14.sp, color: darkTextColor),
-        bodyLarge: TextStyle(
-      fontFamily: "lato",
-      fontSize: 12.sp,
-      color: darkTextColor,
-      fontWeight: FontWeight.bold,
-    ),
-    bodyMedium: TextStyle(
-      fontFamily: "lato",
-      fontSize: 12.sp,
-      color: darkTextColor,
-    ),
-    bodySmall: TextStyle(
-      fontFamily: "lato",
-      fontSize: 11.sp,
-      color: darkTextColor,
-    ),
+        color: lightTextColor,
       ),
-      appBarTheme: AppBarTheme(backgroundColor: darkAppbarColor,iconTheme:IconThemeData(color: darkAppbarIconColor),centerTitle: true,titleTextStyle: TextStyle(fontFamily: "lato", fontSize: 15.sp, color: darkAppbarTextColor), ),
-    
-      iconTheme: IconThemeData(color: darkIconColor)
-      );
+      titleMedium: TextStyle(
+        fontFamily: "lato",
+  
+        color: lightTextColor,
+      ),
+      bodyLarge: TextStyle(
+        fontFamily: "lato",
+        
+        color: lightTextColor,
+      ),
+       bodyMedium: TextStyle(
+        fontFamily: "lato",
+       
+        color: lightTextColor,
+      ),
+       bodySmall: TextStyle(
+        fontFamily: "lato",
+        
+        color: lightTextColor,
+      ),
+    ),
+    // -------------------- appbar theme -----------------------------------------------------
+     appBarTheme: AppBarTheme(
+      // Personnalisez l'apparence de l'app Bar
+      color: lightAppbarColor, 
+     
+      titleTextStyle:   TextStyle(
+        fontFamily: "lato",
+     
+        color: lightTextColor,
+      ),
+    ),
+
+    scaffoldBackgroundColor: lightBackgroundColor
+  );
+
+
+  //========================================   dark theme  ================================================================
+    static ThemeData darkTheme = ThemeData(
+    useMaterial3:true,
+   
+ 
+   //--------------------------------------Text widget--------------------------------------------
+     textTheme:  TextTheme(
+      // Personnalisez le style du texte
+       titleLarge: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontFamily: "lato",
+        color: darkTextColor,
+      ),
+      titleMedium: TextStyle(
+        color: darkTextColor,
+        fontFamily: "lato",
+      ),
+      bodyLarge: TextStyle(
+        color: darkTextColor,
+        fontFamily: "lato",
+      ),
+       bodyMedium: TextStyle(
+        color: darkTextColor,
+        fontFamily: "lato",
+      ),
+       bodySmall: TextStyle(
+        color: darkTextColor,
+        fontFamily: "lato",
+      ),
+    ), 
+ // -------------------- appbar theme -----------------------------------------------------
+     appBarTheme: AppBarTheme(
+      // Personnalisez l'apparence de l'app Bar
+      color: darkAppbarColor, 
+     
+      titleTextStyle:   TextStyle(
+        color: darkTextColor,
+        fontFamily: "lato",
+      ),
+    ),
+    scaffoldBackgroundColor: darkBackgroundColor,
+
+  );
 }
