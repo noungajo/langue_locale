@@ -9,4 +9,14 @@ playerLanguageSourceWidth = 20.w,
 playerImageWidth = 50.w,
 playerNextIconSize = 10.w,
 elevatedButtonPadding = 2.5.w,
-iconSize = 5.w;
+iconSize = 5.w,
+ drawericonWidth = 10.w;
+
+var titleLarge = 18.sp,
+mediumTitle = 16.sp,
+bodyLarge = 14.sp,
+bodyMedium =  12.sp,
+bodySmall = 11.sp,
+appBarTitle =  16.sp,
+paddingController = 8.w,
+homeDividerThinkness = 1.h;

@@ -5,15 +5,18 @@ import '../../../constants/app_constants.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/size.dart';
 import '../../../constants/string.dart';
+import '../home/home_screen.dart';
 import 'ouverture_controller.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Ouverture extends StatelessWidget {
   Ouverture({super.key});
   final controller = Get.put(OuvertureController());
+
+
   @override
   Widget build(BuildContext context) {
-    //controller.startTimer(time);
+    controller.startTimer(time);
       var theme = Theme.of(context).textTheme;
     return Scaffold(
       
@@ -29,12 +32,12 @@ class Ouverture extends StatelessWidget {
               child: Column(
                 children: [
                   AnimatedTextKit( 
-                  totalRepeatCount: 40, 
+                  totalRepeatCount: 3, 
                   animatedTexts: [ 
                    
                     ScaleAnimatedText( 
                       'nom_projet'.tr, 
-                      duration: Duration(milliseconds: time), 
+                      duration: Duration(milliseconds: time~/5), 
                       textStyle: theme.titleLarge?.apply(fontSizeDelta: titleLarge), 
                     ), 
                   ], 

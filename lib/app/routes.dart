@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:reenamuna/app/modules/home/home_screen.dart';
 
 import 'modules/ouverture/ouverture.dart';
 
@@ -11,11 +12,7 @@ class AppRoutes {
     ),
      GetPage(
       name: "/home",
-      page: () => Ouverture(),
-    ),
-      GetPage(
-      name: "/parametre",
-      page: () => Ouverture(),
+      page: () => const HomeScreen(),
     ),
       GetPage(
       name: "/dialog",

@@ -41,13 +41,17 @@ class ThemeClass{
     // -------------------- appbar theme -----------------------------------------------------
      appBarTheme: AppBarTheme(
       // Personnalisez l'apparence de l'app Bar
-      color: lightAppbarColor, 
-     
+     // color: lightAppbarColor,
+     backgroundColor:lightAppbarColor,
       titleTextStyle:   TextStyle(
         fontFamily: "lato",
      
         color: lightTextColor,
       ),
+    ),
+    drawerTheme: DrawerThemeData(
+      backgroundColor:lightBackgroundDrawercolor,
+      
     ),
 
     scaffoldBackgroundColor: lightBackgroundColor
@@ -87,12 +91,16 @@ class ThemeClass{
  // -------------------- appbar theme -----------------------------------------------------
      appBarTheme: AppBarTheme(
       // Personnalisez l'apparence de l'app Bar
-      color: darkAppbarColor, 
-     
+      //color: darkAppbarColor, 
+     backgroundColor:darkAppbarColor,
       titleTextStyle:   TextStyle(
         color: darkTextColor,
         fontFamily: "lato",
       ),
+    ),
+       drawerTheme: DrawerThemeData(
+      backgroundColor:darkBackgroundDrawercolor,
+      
     ),
     scaffoldBackgroundColor: darkBackgroundColor,
 
