@@ -1,6 +1,5 @@
 import 'package:get/get.dart';
 
-import '../home/home_screen.dart';
 
 
 class OuvertureController extends GetxController {
@@ -10,6 +9,6 @@ class OuvertureController extends GetxController {
   Future startTimer(int time) async {   
      await Future.delayed( Duration(microseconds: time~/10));
     await Future.delayed( Duration(milliseconds: time));
-    Get.offAll(() => const HomeScreen());
+    Get.offAndToNamed("/home");
   }
 }

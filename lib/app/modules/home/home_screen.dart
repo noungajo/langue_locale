@@ -20,12 +20,14 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar("nom_projet".tr,context),
-      drawer: drawer(context),
+      drawer: SizedBox(
+        width: drawerWidth,
+        child: drawer(context)),
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.all(bodyPadding),
           child: Wrap(
-            spacing:1.h,
+            spacing:8.w,
             children: [
             HomeItem(lottieIcon: lottiePremierMot,textDecoration: 'premier_mot'.tr,callback:(){}),
             HomeItem(lottieIcon: lottieDialogue,textDecoration: 'dialogue'.tr,callback:(){

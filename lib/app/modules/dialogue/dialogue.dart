@@ -21,25 +21,29 @@ class Dialogue extends StatelessWidget {
           padding: EdgeInsets.all(bodyPadding),
           child: Column(
             children: [
-         ListTile(
-            leading: Image.asset(dialogPresentationIcon),
-            title:  Text('presentation_dialog'.tr,style: bodyLargeStyle,),
-            onTap: () {
-              //ici sera charger les données de la présentation pour lire dans le lecteur
-              Get.toNamed("/player");
-            },
-          ),
-          SizedBox(
-            height: paddingController,
-          ),
-            ListTile(
-            leading: SvgPicture.asset(dialogSalutationIcon),
-            title:  Text('salutation_dialog'.tr,style: bodyLargeStyle,),
-            onTap: () {
-              //ici sera charger les données de la salution pour lire dans le lecteur
-              Get.toNamed("/player");
-            },
-          ),
+         Padding(
+           padding:  EdgeInsets.only(bottom:itemSpacer),
+           child: ListTile(
+              leading: Image.asset(dialogPresentationIcon),
+              title:  Text('presentation_dialog'.tr,style: bodyLargeStyle,),
+              onTap: () {
+                //ici sera charger les données de la présentation pour lire dans le lecteur
+                Get.toNamed("/player");
+              },
+            ),
+         ),
+        
+            Padding(
+              padding: EdgeInsets.only(bottom:itemSpacer),
+              child: ListTile(
+              leading: SvgPicture.asset(dialogSalutationIcon),
+              title:  Text('salutation_dialog'.tr,style: bodyLargeStyle,),
+              onTap: () {
+                //ici sera charger les données de la salution pour lire dans le lecteur
+                Get.toNamed("/player");
+              },
+                      ),
+            ),
           ]),
         ),
       ),

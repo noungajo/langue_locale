@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:reenamuna/constants/style.dart';
 import 'package:sizer/sizer.dart';
 import '../../../constants/app_constants.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/size.dart';
 import '../../../constants/string.dart';
-import '../home/home_screen.dart';
 import 'ouverture_controller.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
@@ -17,7 +17,6 @@ class Ouverture extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     controller.startTimer(time);
-      var theme = Theme.of(context).textTheme;
     return Scaffold(
       
       body: Center(
@@ -38,7 +37,7 @@ class Ouverture extends StatelessWidget {
                     ScaleAnimatedText( 
                       'nom_projet'.tr, 
                       duration: Duration(milliseconds: time~/5), 
-                      textStyle: theme.titleLarge?.apply(fontSizeDelta: titleLarge), 
+                      textStyle: openTitleStyle, 
                     ), 
                   ], 
                 ), 
