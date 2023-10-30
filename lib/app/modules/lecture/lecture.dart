@@ -1,7 +1,10 @@
+import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:reenamuna/app/utils/app_bar.dart';
+import 'package:sizer/sizer.dart';
 import '../../../constants/size.dart';
+import '../../../constants/style.dart';
 import '../../internationalisation/inter_controller.dart';
 import 'widgets/bouton.dart';
 
@@ -14,6 +17,15 @@ class Lecture extends StatefulWidget {
 
 class _LectureState extends State<Lecture> {
  var interController= Get.put(InterController());
+   // Initial Selected Value 
+  String selectedValue =  "Fè'éfè'é";    
+  
+  // List of items in our dropdown menu 
+  var items = [     
+    "Fè'éfè'é", 
+    "Douala", 
+   
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,28 +35,61 @@ class _LectureState extends State<Lecture> {
             padding: EdgeInsets.all(bodyPadding*2),
             child: Column(
               children: [
-                Row(
-                  children: [
-                    bouton("langue".tr,(){
-                      final param = "langue".tr.toLowerCase().substring(0,2);
-if(param=="en"){
-                      interController.changeLanguage("fr", "fr");
-
-}else{
-                      interController.changeLanguage("en", "en");
-
-}
-                     
-                    }),
-                 Icon(Icons.arrow_forward_sharp,size: 32,color: Colors.black,),
-                    bouton("francais".tr,(){}),
-
-                  ],
-                )
+                enteteLecture()
               ],
             ),
 
         )),
     );
+  }
+
+  Row enteteLecture() {
+    return Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  bouton("langue".tr,(){
+                    final param = "langue".tr.toLowerCase().substring(0,2);
+if(param=="en"){
+                    interController.changeLanguage("fr", "fr");
+
+}else{
+                    interController.changeLanguage("en", "en");
+
+}
+                   
+                  }),
+               Icon(Icons.arrow_forward_sharp,size: 15.w,color: Colors.black,),
+             DropdownButtonHideUnderline(
+      child: DropdownButton2<String>(
+        isExpanded: true,
+        items: items
+            .map((String item) => DropdownMenuItem<String>(
+                  value: item,
+                  child: Text(
+                    item,
+                    style:bodySmallStyle,
+                  ),
+                ))
+            .toList(),
+        value: selectedValue,
+        onChanged: (String? value) {
+          setState(() {
+            //TODO: permutter la langue cible
+            selectedValue = value!;
+          });
+        },
+        buttonStyleData:  ButtonStyleData(
+          //padding: EdgeInsets.symmetric(horizontal: 16),
+          height:dropdownHeight,
+          width: dropdownWight,
+        ),
+        menuItemStyleData:  MenuItemStyleData(
+          height: 5.h,
+        ),
+      ),
+    ),
+
+               ],
+              );
   }
 }
