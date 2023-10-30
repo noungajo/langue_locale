@@ -8,7 +8,7 @@ class LectureController extends GetxController{
   setCurrentListeLecture(List<LectureModele> listes){
     listeLecture = listes;
   }
-  getCurrentListeLecture(){
+ List<LectureModele> getCurrentListeLecture(){
    return listeLecture ;
   }
 }
