@@ -5,11 +5,13 @@ import '../../../../constants/colors.dart';
 import '../../../../constants/size.dart';
 import '../../../../constants/string.dart';
 import '../../../../constants/style.dart';
+import '../../lecture/lecture_controller.dart';
+import 'liste_lecture_objects.dart';
 
 
 
 Drawer drawer (BuildContext context){
-  
+  var lectureController = Get.find<LectureController>();
   return Drawer(
       child: ListView(
           // Important: Remove any padding from the ListView.
@@ -59,8 +61,8 @@ Drawer drawer (BuildContext context){
                leading: Lottie.asset(lottieNombre,width: drawericonWidth),
                 title:  Text('compter'.tr,style: bodySmallStyle,),
                 onTap: () {
-                  //TODO: ici sera charger les données des nombre pour  ouvrir le lecteur et compter
-                  Navigator.pop(context);
+                   lectureController.setCurrentListeLecture(listeLectureNombre);
+              Get.toNamed("/lecture");
                 },
                        ),
              ),

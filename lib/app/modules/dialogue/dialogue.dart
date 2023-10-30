@@ -15,14 +15,16 @@ class Dialogue extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar("dialogue".tr,context),
-      drawer: drawer(context),
+      drawer: SizedBox(
+          width: drawerWidth,
+          child: drawer(context)),
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.all(bodyPadding),
           child: Column(
             children: [
          Padding(
-           padding:  EdgeInsets.only(bottom:itemSpacer),
+           padding:  EdgeInsets.only(bottom:itemSpacer,top: itemSpacer),
            child: ListTile(
               leading: Image.asset(dialogPresentationIcon),
               title:  Text('presentation_dialog'.tr,style: bodyLargeStyle,),
@@ -34,7 +36,7 @@ class Dialogue extends StatelessWidget {
          ),
         
             Padding(
-              padding: EdgeInsets.only(bottom:itemSpacer),
+              padding: EdgeInsets.only(bottom:itemSpacer,top: itemSpacer),
               child: ListTile(
               leading: SvgPicture.asset(dialogSalutationIcon),
               title:  Text('salutation_dialog'.tr,style: bodyLargeStyle,),
