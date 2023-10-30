@@ -6,7 +6,7 @@ AppBar appBar(String title,BuildContext context){
    final textTheme = Theme.of(context).textTheme;
   return AppBar(
     backgroundColor: lightAppbarColor,
-    title: Text(title,style:textTheme.titleMedium?.apply(fontSizeDelta: mediumTitle)),
+    title: Text(title,style:titleMediumStyle),
     centerTitle: true,
     );
 }
