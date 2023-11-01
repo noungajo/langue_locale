@@ -36,7 +36,7 @@ var listeLectureNombre = [
   LectureModele(text: "deux-cent", imageUrl: "assets/images/compter/200.png",audioMap: {"Fè'éfè'é":"audios/compter/200-deux_cent.mp3","Douala":""}),
   LectureModele(text: "trois-cent", imageUrl: "assets/images/compter/300.png",audioMap: {"Fè'éfè'é":"audios/compter/300-trois_cent.mp3","Douala":""}),
   LectureModele(text: "quatre-cent", imageUrl: "assets/images/compter/400.png",audioMap: {"Fè'éfè'é":"audios/compter/400-quatre_cent.mp3","Douala":""}),
-  LectureModele(text: "cinq-vingt", imageUrl: "assets/images/compter/500.png",audioMap: {"Fè'éfè'é":"audios/compter/500-cinq_cent.mp3","Douala":""}),
+  LectureModele(text: "cinq-cent", imageUrl: "assets/images/compter/500.png",audioMap: {"Fè'éfè'é":"audios/compter/500-cinq_cent.mp3","Douala":""}),
   LectureModele(text: "six-cent", imageUrl: "assets/images/compter/600.png",audioMap: {"Fè'éfè'é":"audios/compter/600-six_cent.mp3","Douala":""}),
   LectureModele(text: "sept-cent", imageUrl: "assets/images/compter/700.png",audioMap: {"Fè'éfè'é":"audios/compter/700-sept_cent.mp3","Douala":""}),
   LectureModele(text: "huit-cent", imageUrl: "assets/images/compter/800.png",audioMap: {"Fè'éfè'é":"audios/compter/800-huit_cent.mp3","Douala":""}),
