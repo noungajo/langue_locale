@@ -10,7 +10,17 @@ playerImageWidth = 50.w,
 playerNextIconSize = 10.w,
 elevatedButtonPadding = 2.5.w,
 iconSize = 5.w,
- drawericonWidth = 10.w;
+ drawericonWidth = 10.w,
+ homeIconWidth = 35.w,
+ homeIconSizedBoxWidth = 40.w,
+ itemSpacer = 2.h,
+ drawerWidth = 70.w,
+ dropdownHeight = 5.h,
+ dropdownWight = 20.w,
+ lectureImageSize = 30.w,
+borderMiniRidusSize = 5.w,
+borderRadiusSize = 10.w
+ ;
 
 var titleLarge = 18.sp,
 mediumTitle = 16.sp,

@@ -1,1 +1,11 @@
-String imageOuverture = "assets/images/ouverture.png";
+String imageOuverture = "assets/images/ouverture.png",
+lottiePremierMot = "assets/lottie/premier_mot.json",
+lottieDialogue = "assets/lottie/dialog.json",
+lottieNombre = "assets/lottie/nombre.json",
+lottieAnimaux = "assets/lottie/animaux.json",
+lottieFruit = "assets/lottie/fruit.json",
+lottieMoisAnnee = "assets/lottie/mois_anne.json",
+logoReenamuna = "assets/images/compter/0.png",
+dialogPresentationIcon = "assets/images/presentation_image.png",
+dialogSalutationIcon = "assets/svg/salutation.svg",
+imageNotFound = 'assets/images/not_found.png';

@@ -3,7 +3,13 @@ import 'package:sizer/sizer.dart';
 
 import 'colors.dart';
 
-var  titleLargeStyle= TextStyle(
+var  openTitleStyle= TextStyle(
+        fontWeight: FontWeight.bold,
+        fontFamily: "lato",
+        color: lightTextColor,
+        fontSize: 30.sp,
+      ),
+titleLargeStyle= TextStyle(
         fontWeight: FontWeight.bold,
         fontFamily: "lato",
         color: lightTextColor,
@@ -16,8 +22,9 @@ var  titleLargeStyle= TextStyle(
       ),
       bodyLargeStyle= TextStyle(
         fontFamily: "lato",
-        fontSize: 14.sp,
+        fontSize: 12.sp,
         color: lightTextColor,
+        fontWeight: FontWeight.bold,
       ),
        bodyMediumStyle= TextStyle(
         fontFamily: "lato",
@@ -31,7 +38,7 @@ var  titleLargeStyle= TextStyle(
       ),
      titleDrawerStyle= TextStyle(
         fontFamily: "lato",
-        fontSize:  14.sp,
+        fontSize:  13.sp,
         color: lightTextDrawerColor,
       )
       ;
