@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:reenamuna/app/modules/home/home_screen.dart';
 
+import 'modules/dialogue/dialogue.dart';
+import 'modules/lecture/lecture.dart';
 import 'modules/ouverture/ouverture.dart';
 
 class AppRoutes {
@@ -16,11 +18,11 @@ class AppRoutes {
     ),
       GetPage(
       name: "/dialog",
-      page: () => Ouverture(),
+      page: () => const Dialogue(),
     ),
       GetPage(
-      name: "/player",
-      page: () => Ouverture(),
+      name: "/lecture",
+      page: () => const Lecture(),
     ),
   ];
 }

@@ -8,7 +8,7 @@ var listeLectureNombre = [
   LectureModele(text: "trois", imageUrl: "assets/images/compter/3.png",audioMap: {"Fè'éfè'é":"audios/compter/3-trois.mp3","Douala":"audios/compter/dla_3.mp3"}),
   LectureModele(text: "quatre", imageUrl: "assets/images/compter/4.png",audioMap: {"Fè'éfè'é":"audios/compter/4-quatre.mp3","Douala":"audios/compter/dla_4.mp3"}),
   LectureModele(text: "cinq", imageUrl: "assets/images/compter/5.png",audioMap: {"Fè'éfè'é":"audios/compter/5-cinq.mp3","Douala":"audios/compter/dla_5.mp3"}),
-  LectureModele(text: "six", imageUrl: "assets/images/compter/6.png",audioMap: {"Fè'éfè'é":"audios/compter/6-six.mp3","Douala":"audios/compter/test.ogg"}),
+  LectureModele(text: "six", imageUrl: "assets/images/compter/6.png",audioMap: {"Fè'éfè'é":"audios/compter/6-six.mp3","Douala":""}),
   LectureModele(text: "sept", imageUrl: "assets/images/compter/7.png",audioMap: {"Fè'éfè'é":"audios/compter/7-sept.mp3","Douala":""}),
   LectureModele(text: "huit", imageUrl: "assets/images/compter/8.png",audioMap: {"Fè'éfè'é":"audios/compter/8-huit.mp3","Douala":""}),
   LectureModele(text: "neuf", imageUrl: "assets/images/compter/9.png",audioMap: {"Fè'éfè'é":"audios/compter/9-neuf.mp3","Douala":""}),

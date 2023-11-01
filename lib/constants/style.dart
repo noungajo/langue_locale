@@ -20,6 +20,12 @@ titleLargeStyle= TextStyle(
   fontSize: 16.sp,
         color: lightTextColor,
       ),
+        itemStyle= TextStyle(
+        fontFamily: "lato",
+        fontSize: 16.sp,
+        color: lightTextColor,
+        fontWeight: FontWeight.bold,
+      ),
       bodyLargeStyle= TextStyle(
         fontFamily: "lato",
         fontSize: 12.sp,

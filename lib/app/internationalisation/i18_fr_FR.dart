@@ -129,6 +129,8 @@ var i18Fr = {
   "salutation_dialog":"Salutation",
   "min_atteint":"Vous êtes au plus petit nombre",
   "max_atteint":"Vous êtes au plus grand nombre",
+  "unable_to_load":"Erreur système : Impossible de charger cette image",
+  "empty_translation":"Aucune traduction pour ce mot"
  
 };
 

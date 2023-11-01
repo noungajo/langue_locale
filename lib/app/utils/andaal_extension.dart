@@ -5,6 +5,6 @@ extension StringCasingExtension on String {
       .split(' ')
       .map((str) => str.toCapitalized())
       .join(' ');
-  String subStringPerso() => length < 28 ? this : substring(0, 25) + "...";
-  String moreSubStringPerso() => length < 35 ? this : substring(0, 32) + "...";
+  String subStringPerso() => length < 28 ? this : "${substring(0, 25)}...";
+  String moreSubStringPerso() => length < 35 ? this : "${substring(0, 32)}...";
 }

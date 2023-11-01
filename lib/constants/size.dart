@@ -17,7 +17,8 @@ iconSize = 5.w,
  drawerWidth = 70.w,
  dropdownHeight = 5.h,
  dropdownWight = 20.w,
- lectureImageSize = 30.w,
+ lectureImageSize = 50.w,
+ lectureImageSizeHeight = 40.h,
 borderMiniRidusSize = 5.w,
 borderRadiusSize = 10.w
  ;
