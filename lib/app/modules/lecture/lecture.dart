@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -7,11 +9,14 @@ import 'package:sizer/sizer.dart';
 import '../../../constants/app_constants.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/size.dart';
+import '../../../constants/string.dart';
 import '../../../constants/style.dart';
 import '../../internationalisation/inter_controller.dart';
+import '../../utils/snackbar.dart';
 import '../home/widgets/drawer.dart';
 import 'lecture_modele.dart';
 import 'widgets/bouton.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class Lecture extends StatefulWidget {
   const Lecture({super.key});
@@ -23,6 +28,7 @@ class Lecture extends StatefulWidget {
 class _LectureState extends State<Lecture> {
   var interController = Get.put(InterController());
   var lectureController = Get.find<LectureController>();
+  final player = AudioPlayer();
   List<LectureModele> objectList = [];
   RxInt currentObjet = 0.obs;
   @override
@@ -49,15 +55,29 @@ class _LectureState extends State<Lecture> {
           children: [
             enteteLecture(),
             SizedBox(
-              height: itemSpacer*2,
+              height: itemSpacer * 2,
             ),
             Obx(() => InkWell(
-              onTap: () {
-                print("Je suis le meilleur $selectedValue");
-                print(objectList[currentObjet.value].audioMap[selectedValue]);
-                //TODO: vérifier que l'objet est vide pour permettre la lecture ou pas.
-              },
-              child: Column(
+                  onTap: () {
+                    //TODO: comment gérer une image qui n'existe pas ou un audio
+                    /*
+ 
+                */
+                    String? audioPath =
+                        objectList[currentObjet.value].audioMap[selectedValue];
+                    if (audioPath == null) {
+                      showSnackBar(context, "System Error", snackBartime);
+                    } else {
+                      if (audioPath.isEmpty) {
+                        showSnackBar(context, "No translation for this word",
+                            snackBartime);
+                      } else {
+                        player.play(AssetSource(audioPath));
+                        player.stop();
+                      }
+                    }
+                  },
+                  child: Column(
                     children: [
                       Text(
                         objectList[currentObjet.value].text.tr,
@@ -65,59 +85,75 @@ class _LectureState extends State<Lecture> {
                       ),
                       Image.asset(
                         objectList[currentObjet.value].imageUrl,
-                        width: lectureImageSize*1.5,
-                        height: lectureImageSize*2,
+                        width: lectureImageSize * 1.5,
+                        height: lectureImageSize * 2,
                         fit: BoxFit
                             .contain, // Ajuste l'image pour remplir l'espace sans
+                        errorBuilder: (context, error, stackTrace) {
+                          // Gérez l'erreur ici, par exemple, en affichant une image de remplacement ou un message d'erreur
+                          return Image.asset(
+                              imageNotFound); // Image de remplacement
+                        },
                       )
                     ],
                   ),
-            )),
-             SizedBox(
-              height: itemSpacer*4,
+                )),
+            SizedBox(
+              height: itemSpacer * 4,
             ),
             SizedBox(
-              width: lectureImageSize*1.5,
-              child: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  children: [
-    ClipRRect(
-      borderRadius: BorderRadius.circular(borderMiniRidusSize), // Bordures arrondies
-      child: Container(
-        color: lightAppbarColor, // Couleur de fond pour le bouton "Previous"
-        child: IconButton(
-          icon: Icon(Icons.arrow_back,color: Colors.white,), // Icône de flèche vers la gauche
-          onPressed: () {
-            // Action à effectuer lorsqu'on appuie sur le bouton "Previous"
-            if(currentObjet.value >0){
-              currentObjet.value = currentObjet.value - 1;
-            }else{
-              //TODO: Snacbar pour notifier que le minimum est atteint
-            }
-          },
-        ),
-      ),
-    ),
-    ClipRRect(
-      borderRadius: BorderRadius.circular(borderMiniRidusSize), // Bordures arrondies
-      child: Container(
-        color: lightAppbarColor, // Couleur de fond pour le bouton "Next"
-        child: IconButton(
-          icon: Icon(Icons.arrow_forward,color: Colors.white,), // Icône de flèche vers la droite
-          onPressed: () {
-            // Action à effectuer lorsqu'on appuie sur le bouton "Next"
-            if(currentObjet.value <objectList.length-1){
-              currentObjet.value = currentObjet.value + 1;
-            }else{
-              //TODO: Snacbar pour notifier que le maximum est atteint
-            }
-          },
-        ),
-      ),
-    ),
-  ],
-)
-                )
+                width: lectureImageSize * 1.5,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(
+                          borderMiniRidusSize), // Bordures arrondies
+                      child: Container(
+                        color:
+                            lightAppbarColor, // Couleur de fond pour le bouton "Previous"
+                        child: IconButton(
+                          icon: const Icon(
+                            Icons.arrow_back,
+                            color: Colors.white,
+                          ), // Icône de flèche vers la gauche
+                          onPressed: () {
+                            // Action à effectuer lorsqu'on appuie sur le bouton "Previous"
+                            if (currentObjet.value > 0) {
+                              currentObjet.value = currentObjet.value - 1;
+                            } else {
+                              showSnackBar(
+                                  context, "min_atteint".tr, snackBartime);
+                            }
+                          },
+                        ),
+                      ),
+                    ),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(
+                          borderMiniRidusSize), // Bordures arrondies
+                      child: Container(
+                        color:
+                            lightAppbarColor, // Couleur de fond pour le bouton "Next"
+                        child: IconButton(
+                          icon: const Icon(
+                            Icons.arrow_forward,
+                            color: Colors.white,
+                          ), // Icône de flèche vers la droite
+                          onPressed: () {
+                            // Action à effectuer lorsqu'on appuie sur le bouton "Next"
+                            if (currentObjet.value < objectList.length - 1) {
+                              currentObjet.value = currentObjet.value + 1;
+                            } else {
+                              showSnackBar(
+                                  context, "max_atteint".tr, snackBartime);
+                            }
+                          },
+                        ),
+                      ),
+                    ),
+                  ],
+                ))
           ],
         ),
       )),
@@ -156,7 +192,6 @@ class _LectureState extends State<Lecture> {
             value: selectedValue,
             onChanged: (String? value) {
               setState(() {
-                //TODO: permutter la langue cible
                 selectedValue = value!;
               });
             },

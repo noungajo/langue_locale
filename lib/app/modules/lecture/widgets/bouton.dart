@@ -13,6 +13,9 @@ ElevatedButton bouton(String label,VoidCallback callback){
     ),
   ),
   onPressed: callback,
-  child: Text(label,style: bodySmallStyle,), // Texte à afficher sur le bouton
+  child: Padding(
+    padding:  EdgeInsets.only(top: elevatedButtonPadding,bottom: elevatedButtonPadding),
+    child: Text(label,style: bodySmallStyle,),
+  ), // Texte à afficher sur le bouton
 );
 }
