@@ -99,6 +99,8 @@ var i18Fr = {
   "langue":"Français",
   "presentation_dialog":"Présentation",
   "salutation_dialog":"Salutation",
+  "min_atteint":"Vous êtes au plus petit nombre",
+  "max_atteint":"Vous êtes au plus grand nombre",
  
 };
 

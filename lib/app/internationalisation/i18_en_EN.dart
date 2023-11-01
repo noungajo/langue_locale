@@ -99,5 +99,7 @@ var i18En = {
   "langue":"English",
   "presentation_dialog":"Presentation",
   "salutation_dialog":"Greeting",
+  "min_atteint":"You are at the smallest number",
+  "max_atteint":"You are at the biggest number",
   
   };
