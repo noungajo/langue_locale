@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:reenamuna/constants/style.dart';
-import 'package:sizer/sizer.dart';
 import '../../../constants/app_constants.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/size.dart';
@@ -12,46 +10,50 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 class Ouverture extends StatelessWidget {
   Ouverture({super.key});
   final controller = Get.put(OuvertureController());
-
-
   @override
   Widget build(BuildContext context) {
     controller.startTimer(time);
+  var size = MediaQuery.of(context).size;
     return Scaffold(
-      
-      body: Center(
-        child: Container(
-          padding: EdgeInsets.all(bodyPadding),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+        body: Center(
+      child: Container(
+        padding: EdgeInsets.all(bodyPadding),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(imageOuverture,fit:BoxFit.scaleDown ,),
+            Image.asset(
+              imageOuverture,
+              fit: BoxFit.scaleDown,
+            ),
             SizedBox(
-              width: 60.w,
+              width:size.width * 0.43,//60.w,
               child: Column(
                 children: [
-                  AnimatedTextKit( 
-                  totalRepeatCount: 3, 
-                  animatedTexts: [ 
-                   
-                    ScaleAnimatedText( 
-                      'nom_projet'.tr, 
-                      duration: Duration(milliseconds: time~/5), 
-                      textStyle: openTitleStyle, 
-                    ), 
-                  ], 
-                ), 
-                  //Text("Reenamuna",style: theme.titleLarge?.apply(fontSizeDelta: titleLarge)),
+                  AnimatedTextKit(
+                    totalRepeatCount: 2,
+                    animatedTexts: [
+                      ScaleAnimatedText(
+                        'nom_projet'.tr,
+                        duration: Duration(milliseconds: time ~/ 5),
+                        textStyle: TextStyle(
+                          fontSize: size.width * 0.07599999,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "lato",
+                          color: lightTextColor,
+                        ), 
+                      ),
+                    ],
+                  ),
                   Divider(
-                    color:lightBarHomePage,
-                    thickness: homeDividerThinkness,
-                  )
+                    color: lightBarHomePage,
+                    thickness: size.height*0.01,
+                  ),
                 ],
               ),
-            )
+            ),
           ],
-        )),
+        ),
       ),
-    );
+    ));
   }
 }
