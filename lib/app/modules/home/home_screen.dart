@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: drawer(context)),
         body: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.all(bodyPadding),
+            padding: EdgeInsets.all(MediaQuery.of(context).size.width*0.05),
             child: Wrap(
               spacing:8.w,
               children: [
@@ -45,11 +45,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 Get.toNamed("/dialog");
               }),
            
-            HomeItem(lottieIcon: lottieAnimaux,textDecoration: 'animaux'.tr,callback:(){}),
+            HomeItem(lottieIcon: lottieAnimaux,textDecoration: 'animaux'.tr,callback:(){
+              lectureController.setCurrentListeLecture(listeLectureAnimaux);
+              Get.toNamed("/lecture");
+            }),
             HomeItem(lottieIcon: lottieNombre,textDecoration: 'compter'.tr,callback:(){
               lectureController.setCurrentListeLecture(listeLectureNombre);
               Get.toNamed("/lecture");}),
-           HomeItem(lottieIcon: lottieFruit,textDecoration: 'fruit'.tr,callback:(){}),
+           HomeItem(lottieIcon: lottieFruit,textDecoration: 'fruit'.tr,callback:(){
+              lectureController.setCurrentListeLecture(listeLectureFruit);
+              Get.toNamed("/lecture");
+           }),
             HomeItem(lottieIcon: lottieMoisAnnee,textDecoration: 'mois'.tr,callback:(){}),
           
        
