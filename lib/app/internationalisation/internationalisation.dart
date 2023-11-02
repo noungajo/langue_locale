@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import 'i18_en_EN.dart';
-import 'i18_fr_FR.dart';
+import 'i18_en.dart';
+import 'i18_fr.dart';
 
 class Internationalisation extends Translations {
   @override
