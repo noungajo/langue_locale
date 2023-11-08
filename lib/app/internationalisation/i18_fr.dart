@@ -181,7 +181,18 @@ var i18Fr = {
   "papaye":"La papaye",
   "pomme_de_terre":"La pomme de terre",
   "prune":"La prune",
-  "tomate":"La tomate"
+  "tomate":"La tomate",
+  
+  "corne":"La corne",
+  "peau":"La peau",
+  "poil":"Le poil",
+  "ecaille":"Une écaille",
+  "fourmi":"Une fourmie",
+  "girafe":"Une girafe",
+  "patte":"Une patte",
+  "plume":"Une plume",
+  "poisson":"Un poisson",
+  "zebre":"Un zèbre"
 
 };
 

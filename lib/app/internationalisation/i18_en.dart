@@ -180,5 +180,16 @@ var i18En = {
 "papaye": "The papaya",
 "pomme_de_terre": "The potato",
 "prune": "The plum",
-"tomate": "The tomato"
+"tomate": "The tomato",
+
+"corne":"Horn",
+  "peau":"Skin",
+  "poil":"Hair",
+  "ecaille":"Scale",
+  "fourmi":"Ant",
+  "girafe":"Giraffe",
+  "patte":"Paw",
+  "plume":"Feather",
+  "poisson":"Fish",
+  "zebre":"Zebra"
   };

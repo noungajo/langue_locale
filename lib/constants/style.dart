@@ -18,7 +18,7 @@ titleLargeStyle= TextStyle(
       titleMediumStyle= TextStyle(
         fontFamily: "lato",
   fontSize: 16.sp,
-        color: lightTextColor,
+        color: lightAppbarTextColor,
       ),
         itemStyle= TextStyle(
         fontFamily: "lato",

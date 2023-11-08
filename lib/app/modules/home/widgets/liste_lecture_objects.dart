@@ -96,9 +96,26 @@ listeLectureAnimaux = [
   LectureModele(text: "rat", imageUrl: "assets/images/animaux/le_rat.png",audioMap: {"Fè'éfè'é":"audios/animaux/le_rat.mp3","Douala":""}),
   LectureModele(text: "renard", imageUrl: "assets/images/animaux/le_renard.png",audioMap: {"Fè'éfè'é":"audios/animaux/le_renard.mp3","Douala":""}),
   LectureModele(text: "serpent", imageUrl: "assets/images/animaux/le_serpent.png",audioMap: {"Fè'éfè'é":"audios/animaux/le_serpent.mp3","Douala":""}),
-  LectureModele(text: "singe", imageUrl: "assets/images/animaux/le_singe.png",audioMap: {"Fè'éfè'é":"audios/animaux/le_singe.mp3","Douala":""}),
+  LectureModele(text: "singe", imageUrl: "assets/images/animaux/le_singe.jpg",audioMap: {"Fè'éfè'é":"audios/animaux/le_singe.mp3","Douala":""}),
   LectureModele(text: "hippopotame", imageUrl: "assets/images/animaux/l_hippopotame.png",audioMap: {"Fè'éfè'é":"audios/animaux/l_hippopotame.mp3","Douala":""}),
   LectureModele(text: "oiseau", imageUrl: "assets/images/animaux/l_oiseau.png",audioMap: {"Fè'éfè'é":"audios/animaux/l_oiseau.mp3","Douala":""}),
   LectureModele(text: "oeuf", imageUrl: "assets/images/animaux/oeuf.png",audioMap: {"Fè'éfè'é":"audios/animaux/oeuf.mp3","Douala":""}),
+  
+    LectureModele(text: "corne", imageUrl: "assets/images/animaux/la_corne.jpeg",audioMap: {"Fè'éfè'é":"audios/animaux/la_corne.mp3","Douala":""}),
+    LectureModele(text: "peau", imageUrl: "assets/images/animaux/la_peau.jpeg",audioMap: {"Fè'éfè'é":"audios/animaux/la_peau.mp3","Douala":""}),
+    LectureModele(text: "poil", imageUrl: "assets/images/animaux/le_poil.jpeg",audioMap: {"Fè'éfè'é":"audios/animaux/le_poil.mp3","Douala":""}),
+    LectureModele(text: "ecaille", imageUrl: "assets/images/animaux/une _ecaille.jpeg",audioMap: {"Fè'éfè'é":"audios/animaux/une_ecaille.mp3","Douala":""}),
+    
+    LectureModele(text: "fourmi", imageUrl: "assets/images/animaux/une_fourmi.jpeg",audioMap: {"Fè'éfè'é":"audios/animaux/une_fourmi.mp3","Douala":""}),
+    
+    LectureModele(text: "girafe", imageUrl: "assets/images/animaux/une_girafe.jpeg",audioMap: {"Fè'éfè'é":"audios/animaux/une_girafe.mp3","Douala":""}),
+    
+    LectureModele(text: "patte", imageUrl: "assets/images/animaux/une_patte.png",audioMap: {"Fè'éfè'é":"audios/animaux/une_patte.mp3","Douala":""}),
+    
+    LectureModele(text: "plume", imageUrl: "assets/images/animaux/une_plume.png",audioMap: {"Fè'éfè'é":"audios/animaux/une_plume.mp3","Douala":""}),
+    
+    LectureModele(text: "poisson", imageUrl: "assets/images/animaux/un_poisson.jpeg",audioMap: {"Fè'éfè'é":"audios/animaux/un_poisson.mp3","Douala":""}),
+    
+    LectureModele(text: "zebre", imageUrl: "assets/images/animaux/un_zebre.jpeg",audioMap: {"Fè'éfè'é":"audios/animaux/un_zebre.mp3","Douala":""}),
 ]
 ;

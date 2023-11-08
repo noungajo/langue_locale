@@ -50,8 +50,8 @@ Drawer drawer (BuildContext context){
                 title:  Text('dialogue'.tr,style: bodySmallStyle,),
                 onTap: () {
                   //ici sera charger les données des dialogues mots pour ouvrir l'interface de dialogue
+                  Navigator.pop(context);
                   Get.toNamed("/dialog");
-                  //Navigator.pop(context);
                 },
               ),
             ),
@@ -62,6 +62,7 @@ Drawer drawer (BuildContext context){
                 title:  Text('compter'.tr,style: bodySmallStyle,),
                 onTap: () {
                    lectureController.setCurrentListeLecture(listeLectureNombre);
+                   Navigator.pop(context);
               Get.toNamed("/lecture");
                 },
                        ),
@@ -72,8 +73,9 @@ Drawer drawer (BuildContext context){
                 leading: Lottie.asset(lottieAnimaux,width: drawericonWidth),
                 title:  Text('animaux'.tr,style: bodySmallStyle,),
                 onTap: () {
-                  //ici sera charger les données des animaux mots pour ouvrir le lecteur
-                  Navigator.pop(context);
+                   lectureController.setCurrentListeLecture(listeLectureAnimaux);
+              Navigator.pop(context);
+              Get.toNamed("/lecture");
                 },
               ),
             ), 
@@ -83,8 +85,9 @@ Drawer drawer (BuildContext context){
                leading: Lottie.asset(lottieFruit,width: drawericonWidth),
                 title:  Text('fruit'.tr,style: bodySmallStyle,),
                 onTap: () {
-                  //ici sera charger les données des fruits mots pour ouvrir le lecteur
-                  Navigator.pop(context);
+                   lectureController.setCurrentListeLecture(listeLectureFruit);
+              Navigator.pop(context);
+              Get.toNamed("/lecture");
                 },
               ),
             ),

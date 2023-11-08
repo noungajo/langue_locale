@@ -20,7 +20,7 @@ class Dialogue extends StatelessWidget {
           child: drawer(context)),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(bodyPadding),
+          padding: EdgeInsets.all(MediaQuery.of(context).size.width*0.05),
           child: Column(
             children: [
          Padding(
@@ -30,7 +30,7 @@ class Dialogue extends StatelessWidget {
               title:  Text('presentation_dialog'.tr,style: bodyLargeStyle,),
               onTap: () {
                 //ici sera charger les données de la présentation pour lire dans le lecteur
-                Get.toNamed("/player");
+               // Get.toNamed("/lecture");
               },
             ),
          ),
@@ -42,7 +42,7 @@ class Dialogue extends StatelessWidget {
               title:  Text('salutation_dialog'.tr,style: bodyLargeStyle,),
               onTap: () {
                 //ici sera charger les données de la salution pour lire dans le lecteur
-                Get.toNamed("/player");
+              //  Get.toNamed("/lecture");
               },
                       ),
             ),

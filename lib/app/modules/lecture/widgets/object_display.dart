@@ -20,6 +20,7 @@ class ObjectDisplay extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(
       ()=> Column(
+        mainAxisAlignment: MainAxisAlignment.center,
       children: [
       Text(
         objectList[currentObjet.value].text.tr,
@@ -39,7 +40,8 @@ class ObjectDisplay extends StatelessWidget {
           errorBuilder: (context, error, stackTrace) {
             // Gérez l'erreur ici, par exemple, en affichant une image de remplacement ou un message d'erreur
             return Image.asset(
-                imageNotFound); // Image de remplacement
+                imageNotFound,fit: BoxFit
+              .contain, ); // Image de remplacement
           },
         ),
       )

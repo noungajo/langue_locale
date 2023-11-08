@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../../../../constants/colors.dart';
 import '../../../../constants/size.dart';
 
-Widget customIconButton({required IconData icon,  VoidCallback? onPressed}) {
+Widget customIconButton({required IconData icon,  VoidCallback? onPressed,Color? couleur ,double? iconSize}) {
   return ClipRRect(
-    borderRadius: BorderRadius.circular(borderMiniRidusSize),
+    borderRadius: BorderRadius.circular(borderRadiusSize),
     child: Container(
-      color: lightAppbarColor,
+      color:couleur ,
       child: IconButton(
         icon: Icon(icon, color: Colors.white),
+        iconSize: iconSize,
         onPressed: onPressed,
       ),
     ),
