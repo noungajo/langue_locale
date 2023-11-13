@@ -81,7 +81,7 @@ var i18Fr = {
   "nom_projet":"Reenamuna",
   "premier_mot":"Mes premiers mots",
   "dialogue":"Dialogues",
-  "compter":"Nombre",
+  "compter":"Compter",
   "animaux":"Animaux",
   "fruit":"Fruits",
   "mois":"Mois de l'année",
@@ -192,7 +192,8 @@ var i18Fr = {
   "patte":"Une patte",
   "plume":"Une plume",
   "poisson":"Un poisson",
-  "zebre":"Un zèbre"
+  "zebre":"Un zèbre",
+  "clique_ici":"Cliquer ici"
 
 };
 

@@ -191,5 +191,6 @@ var i18En = {
   "patte":"Paw",
   "plume":"Feather",
   "poisson":"Fish",
-  "zebre":"Zebra"
+  "zebre":"Zebra",
+  "clique_ici":"Click here"
   };
