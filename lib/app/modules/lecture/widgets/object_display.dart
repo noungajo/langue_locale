@@ -44,7 +44,11 @@ class ObjectDisplay extends StatelessWidget {
               .contain, ); // Image de remplacement
           },
         ),
-      )
+      ),
+        SizedBox(
+        height: itemSpacer*0.5,
+      ),
+      Text("clique_ici".tr,style: clickTextStyle,)
       ],
       ),
     );
