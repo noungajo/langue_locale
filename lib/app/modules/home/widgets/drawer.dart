@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:reenamuna/app/modules/home/widgets/liste_lecture_objects_mois.dart';
+import 'package:reenamuna/app/modules/home/widgets/liste_lecture_objects_premier_mot.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/size.dart';
 import '../../../../constants/string.dart';
 import '../../../../constants/style.dart';
+import '../../lecture/lecture.dart';
 import '../../lecture/lecture_controller.dart';
-import 'liste_lecture_objects.dart';
+import 'liste_lecture_objects_animaux.dart';
+import 'liste_lecture_objects_compter.dart';
+import 'liste_lecture_objects_fruit.dart';
 
 
 
@@ -38,8 +43,10 @@ Drawer drawer (BuildContext context){
                leading: Lottie.asset(lottiePremierMot,width: drawericonWidth,fit: BoxFit.cover),
                 title:  Text('premier_mot'.tr,style: bodySmallStyle,),
                 onTap: () {
-                  //ici sera charger les données des premier mots pour ouvrir le lecteur
+                  
                   Navigator.pop(context);
+                  lectureController.setCurrentListeLecture(listeLecturePremierMot);
+                  Get.off(() =>  Lecture(titre:'premier_mot'));
                 },
               ),
             ),
@@ -49,7 +56,6 @@ Drawer drawer (BuildContext context){
                 leading: Lottie.asset(lottieDialogue,width: drawericonWidth),
                 title:  Text('dialogue'.tr,style: bodySmallStyle,),
                 onTap: () {
-                  //ici sera charger les données des dialogues mots pour ouvrir l'interface de dialogue
                   Navigator.pop(context);
                   Get.toNamed("/dialog");
                 },
@@ -61,9 +67,9 @@ Drawer drawer (BuildContext context){
                leading: Lottie.asset(lottieNombre,width: drawericonWidth),
                 title:  Text('compter'.tr,style: bodySmallStyle,),
                 onTap: () {
-                   lectureController.setCurrentListeLecture(listeLectureNombre);
                    Navigator.pop(context);
-              Get.toNamed("/lecture");
+                   lectureController.setCurrentListeLecture(listeLectureNombre);
+           Get.off(() =>  Lecture(titre:'animaux'));
                 },
                        ),
              ),
@@ -73,9 +79,10 @@ Drawer drawer (BuildContext context){
                 leading: Lottie.asset(lottieAnimaux,width: drawericonWidth),
                 title:  Text('animaux'.tr,style: bodySmallStyle,),
                 onTap: () {
-                   lectureController.setCurrentListeLecture(listeLectureAnimaux);
               Navigator.pop(context);
-              Get.toNamed("/lecture");
+              lectureController.setCurrentListeLecture(listeLectureAnimaux);
+            Get.off(() =>  Lecture(titre: 'animaux',));
+            
                 },
               ),
             ), 
@@ -85,9 +92,10 @@ Drawer drawer (BuildContext context){
                leading: Lottie.asset(lottieFruit,width: drawericonWidth),
                 title:  Text('fruit'.tr,style: bodySmallStyle,),
                 onTap: () {
-                   lectureController.setCurrentListeLecture(listeLectureFruit);
+                  
               Navigator.pop(context);
-              Get.toNamed("/lecture");
+               lectureController.setCurrentListeLecture(listeLectureFruit);
+Get.off(() =>  Lecture(titre:'fruit'));
                 },
               ),
             ),
@@ -97,8 +105,9 @@ Drawer drawer (BuildContext context){
                 leading: Lottie.asset(lottieMoisAnnee,width: drawericonWidth),
                 title:  Text('mois'.tr,style: bodySmallStyle,),
                 onTap: () {
-                  //ici sera charger les données des mois de l'année pour ouvrir le lecteur
+                  lectureController.setCurrentListeLecture(listeLectureMois);
                   Navigator.pop(context);
+                  Get.off(() =>  Lecture(titre:'mois'));
                 },
               ),
             ),
