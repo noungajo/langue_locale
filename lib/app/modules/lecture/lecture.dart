@@ -18,9 +18,10 @@ import 'package:audioplayers/audioplayers.dart';
 import 'widgets/custom_icon_button.dart';
 import 'widgets/object_display.dart';
 
+// ignore: must_be_immutable
 class Lecture extends StatefulWidget {
-  const Lecture({super.key});
-
+  Lecture({required this.titre,super.key});
+  String titre;
   @override
   State<Lecture> createState() => _LectureState();
 }
@@ -55,72 +56,79 @@ class _LectureState extends State<Lecture> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: appBar("nom_projet".tr, context),
-      drawer: SizedBox(width: drawerWidth, child: drawer(context)),
-      body: SingleChildScrollView(
-          child: Padding(
-        padding: EdgeInsets.all(bodyPadding * 1.5),
-        child: SizedBox(
-          child: Column(
-            children: [
-              SizedBox(
-                height: itemSpacer,
-              ),
-              enteteLecture(),
-              SizedBox(
-                height: itemSpacer * 2,
-              ),
-              InkWell(
-                  onTap: () {
-                    playAudio(
-                        objectList[currentObjet.value].audioMap[selectedValue]);
-                  },
-                  child: SizedBox(
-                   height: lectureImageSizeHeight*1.2,
-                    width: lectureImageSizeHeight,
-                    child: ObjectDisplay(
-                        objectList: objectList, currentObjet: currentObjet),
-                  )),
-              SizedBox(
-                height: itemSpacer * 4,
-              ),
-              SizedBox(
-                width: lectureImageSize * 1.5,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    customIconButton(
-                      icon: Icons.arrow_back,
-                      iconSize: iconSize,
-                      couleur: lightAppbarColor,
-                      onPressed: () {
-                        if (currentObjet.value > 0) {
-                          currentObjet.value = currentObjet.value - 1;
-                        } else {
-                          showSnackBar(context, "min_atteint".tr, snackBartime);
-                        }
+    var size = MediaQuery.of(context).size;
+    return WillPopScope(
+
+      onWillPop: ()async { 
+Get.offNamed("/home");
+        return false;
+       },
+      child: Scaffold(
+        appBar: appBar(widget.titre.tr, context),
+        drawer: SizedBox(width: drawerWidth, child: drawer(context)),
+        body: SingleChildScrollView(
+            child: Container(
+              padding: EdgeInsets.only(top: size.height*0.03,left: size.width*0.1,right: size.width*0.1),
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: itemSpacer,
+                  ),
+                  enteteLecture(),
+                  SizedBox(
+                    height: itemSpacer * 2,
+                  ),
+                  InkWell(
+                      onTap: () {
+                        playAudio(
+                            objectList[currentObjet.value].audioMap[selectedValue]);
                       },
+                      child: SizedBox(
+                       height: lectureImageSizeHeight*1.28,
+                        width: lectureImageSizeHeight,
+                        child: ObjectDisplay(
+                            objectList: objectList, currentObjet: currentObjet),
+                      )),
+                  SizedBox(
+                    height: itemSpacer * 4,
+                  ),
+                  //next/previous button
+                  SizedBox(
+                    width: lectureImageSize * 1.5,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        customIconButton(
+                          icon: Icons.arrow_back,
+                          iconSize: iconSize,
+                          couleur: lightAppbarColor,
+                          onPressed: () {
+                            if (currentObjet.value > 0) {
+                              currentObjet.value = currentObjet.value - 1;
+                            } else {
+                              showSnackBar(context, "min_atteint".tr, snackBartime);
+                            }
+                          },
+                        ),
+                        customIconButton(
+                          icon: Icons.arrow_forward,
+                          iconSize: iconSize,
+                          couleur: lightAppbarColor,
+                          onPressed: () {
+                            if (currentObjet.value < objectList.length - 1) {
+                              currentObjet.value = currentObjet.value + 1;
+                            } else {
+                              showSnackBar(context, "max_atteint".tr, snackBartime);
+                            }
+                          },
+                        ),
+                      ],
                     ),
-                    customIconButton(
-                      icon: Icons.arrow_forward,
-                      iconSize: iconSize,
-                      couleur: lightAppbarColor,
-                      onPressed: () {
-                        if (currentObjet.value < objectList.length - 1) {
-                          currentObjet.value = currentObjet.value + 1;
-                        } else {
-                          showSnackBar(context, "max_atteint".tr, snackBartime);
-                        }
-                      },
-                    ),
-                  ],
-                ),
-              )
-            ],
-          ),
-        ),
-      )),
+                  )
+                ],
+              ),
+            )),
+      ),
     );
   }
 
