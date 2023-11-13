@@ -15,6 +15,13 @@ titleLargeStyle= TextStyle(
         color: lightTextColor,
         fontSize: 18.sp,
       ),
+  clickTextStyle = TextStyle(
+        fontFamily: "lato",
+        color: clickTextColor,
+                decoration: TextDecoration.underline,  
+        fontWeight: FontWeight.bold, 
+      
+      ),
       titleMediumStyle= TextStyle(
         fontFamily: "lato",
   fontSize: 16.sp,
