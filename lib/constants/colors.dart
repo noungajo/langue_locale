@@ -10,7 +10,8 @@ lightAppbarColor = Colors.black,//const Color(0xff25D366),
 lightAppbarIconColor = Colors.white,
 lightAppbarTextColor = Colors.white,
 lightIconColor = Colors.white24,
-lightBarHomePage = Colors.red;
+lightBarHomePage = Colors.red,
+clickTextColor = Colors.blue;
 
 var darkBackgroundColor = Colors.black12,
 darkTextColor = Colors.white,
