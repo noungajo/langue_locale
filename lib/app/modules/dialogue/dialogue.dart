@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:reenamuna/app/modules/home/widgets/liste_lecture_objects_presentation.dart';
+import 'package:reenamuna/app/modules/home/widgets/liste_lecture_objects_salutation.dart';
 import 'package:reenamuna/constants/string.dart';
 
 import '../../../constants/size.dart';
 import '../../../constants/style.dart';
 import '../../utils/app_bar.dart';
 import '../home/widgets/drawer.dart';
+import '../lecture/lecture.dart';
+import '../lecture/lecture_controller.dart';
 
+// ignore: must_be_immutable
 class Dialogue extends StatelessWidget {
-  const Dialogue({super.key});
+   Dialogue({super.key});
+  var lectureController = Get.find<LectureController>();
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +36,8 @@ class Dialogue extends StatelessWidget {
               title:  Text('presentation_dialog'.tr,style: bodyLargeStyle,),
               onTap: () {
                 //ici sera charger les données de la présentation pour lire dans le lecteur
-               // Get.toNamed("/lecture");
+                      lectureController.setCurrentListeLecture(listeLecturePresentation);
+             Get.off(() =>  Lecture(titre:'presentation_dialog'));
               },
             ),
          ),
@@ -42,7 +49,8 @@ class Dialogue extends StatelessWidget {
               title:  Text('salutation_dialog'.tr,style: bodyLargeStyle,),
               onTap: () {
                 //ici sera charger les données de la salution pour lire dans le lecteur
-              //  Get.toNamed("/lecture");
+                   lectureController.setCurrentListeLecture(listeLectureSalutation);
+             Get.off(() =>  Lecture(titre:'salutation_dialog'));
               },
                       ),
             ),
