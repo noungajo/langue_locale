@@ -79,7 +79,19 @@ flutter:
   assets:
     - assets/images/
     - assets/images/compter/
+    - assets/images/fruits/
+    - assets/images/animaux/
+    - assets/images/animaux/
+    - assets/images/presentation/
+    - assets/images/salutation/
+    - assets/images/premier_mot/
     - assets/audios/compter/
+    - assets/audios/mois_annee/
+    - assets/audios/fruits/
+    - assets/audios/animaux/
+    - assets/audios/presentation/
+    - assets/audios/salutation/
+    - assets/audios/premier_mot/
     - assets/lottie/
     - assets/svg/
 
