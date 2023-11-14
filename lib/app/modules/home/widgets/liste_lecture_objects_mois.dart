@@ -4,16 +4,17 @@ import 'package:reenamuna/app/modules/lecture/lecture_modele.dart';
 import '../../../../constants/app_constants.dart';
 
 var listeLectureMois = [
-  LectureModele(text: "zero", imageUrl: "${imageUrlBaseCompter}0.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}0_nufi.ogg","Douala":"${audioUrlBaseCompter}0_dla.ogg"}),
-  LectureModele(text: "un", imageUrl: "${imageUrlBaseCompter}1.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}1_nufi.ogg","Douala":"${audioUrlBaseCompter}1_dla.ogg"}),
-  LectureModele(text: "deux", imageUrl: "${imageUrlBaseCompter}2.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}2_nufi.ogg","Douala":"${audioUrlBaseCompter}2_dla.ogg"}),
-  LectureModele(text: "trois", imageUrl: "${imageUrlBaseCompter}3.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}3_nufi.ogg","Douala":"${audioUrlBaseCompter}3_dla.ogg"}),
-  LectureModele(text: "quatre", imageUrl: "${imageUrlBaseCompter}4.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}4_nufi.ogg","Douala":"${audioUrlBaseCompter}4_dla.ogg"}),
-  LectureModele(text: "cinq", imageUrl: "${imageUrlBaseCompter}5.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}5_nufi.ogg","Douala":"${audioUrlBaseCompter}5_dla.ogg"}),
-  LectureModele(text: "six", imageUrl: "${imageUrlBaseCompter}6.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}6_nufi.ogg","Douala":""}),
-  LectureModele(text: "sept", imageUrl: "${imageUrlBaseCompter}7.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}7_nufi.ogg","Douala":""}),
-  LectureModele(text: "huit", imageUrl: "${imageUrlBaseCompter}8.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}8_nufi.ogg","Douala":""}),
-  LectureModele(text: "neuf", imageUrl: "${imageUrlBaseCompter}9.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}9_nufi.ogg","Douala":""}),
-  LectureModele(text: "dix", imageUrl: "${imageUrlBaseCompter}10.png",audioMap: {"Fè'éfè'é":"${audioUrlBaseCompter}10_nufi.ogg","Douala":""}),
+  LectureModele(text: "janvier", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}janvier_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}janvier_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "fevrier", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}fevrier_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}fevrier_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "mars", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}mars_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}mars_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "avril", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}avril_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}avril_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "mai", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}mai_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}mai_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "juin", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}juin_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}juin_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "juillet", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}juillet_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}juillet_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "aout", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}aout_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}aout_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "septembre", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}septembre_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}septembre_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "octobre", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}octobre_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}octobre_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "novembre", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}novembre_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}novembre_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
+  LectureModele(text: "decembre", imageUrl: "",audioMap: {"Fè'éfè'é":"${audioUrlBaseMoisDeLanne}decembre_nufi.ogg","Douala":"${audioUrlBaseMoisDeLanne}decembre_dla.ogg","Bangangté":"","Yambassa":"","Étón":""}),
 
 ];
