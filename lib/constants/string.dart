@@ -8,4 +8,5 @@ lottieMoisAnnee = "assets/lottie/mois_anne.json",
 logoReenamuna = "assets/images/compter/0.png",
 dialogPresentationIcon = "assets/images/presentation_image.png",
 dialogSalutationIcon = "assets/svg/salutation.svg",
-imageNotFound = 'assets/images/not_found.png';
+imageNotFound = 'assets/images/not_found.png',
+ouvertureSalutation = "assets/images/salutation/ouverture_lonam_et_mbouani.png";
