@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
               HomeItem(lottieIcon: lottiePremierMot,textDecoration: 'premier_mot'.tr,callback:(){
                   lectureController.setCurrentListeLecture(listeLecturePremierMot);
-            
+            lectureController.setPop(false);
                Get.off(() =>  Lecture(titre:'premier_mot'));
               }),
               HomeItem(lottieIcon: lottieDialogue,textDecoration: 'dialogue'.tr,callback:(){
@@ -55,18 +55,23 @@ class _HomeScreenState extends State<HomeScreen> {
            
             HomeItem(lottieIcon: lottieAnimaux,textDecoration: 'animaux'.tr,callback:(){
               lectureController.setCurrentListeLecture(listeLectureAnimaux);
+
+            lectureController.setPop(false);
                Get.off(() =>  Lecture(titre:'animaux'));
             }),
             HomeItem(lottieIcon: lottieNombre,textDecoration: 'compter'.tr,callback:(){
               lectureController.setCurrentListeLecture(listeLectureNombre);
+            lectureController.setPop(false);
              Get.off(() =>  Lecture(titre:'compter'))
              ;}),
            HomeItem(lottieIcon: lottieFruit,textDecoration: 'fruit'.tr,callback:(){
               lectureController.setCurrentListeLecture(listeLectureFruit);
+            lectureController.setPop(false);
               Get.off(() =>  Lecture(titre:'fruit'));
            }),
             HomeItem(lottieIcon: lottieMoisAnnee,textDecoration: 'mois'.tr,callback:(){
                 lectureController.setCurrentListeLecture(listeLectureMois);
+            lectureController.setPop(false);
               Get.off(() =>  Lecture(titre:'mois'));
             }),
           
