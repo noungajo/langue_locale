@@ -3,6 +3,9 @@
  languePrisEnCharge =  [
     "Fè'éfè'é",
     "Douala",
+    "Bangangté",
+    "Yambassa",
+    "Étón"
   ],
  audioUrlBaseCompter = "audios/compter/",
  audioUrlBasefruit = "audios/fruits/",
@@ -18,5 +21,5 @@
  imageUrlBaseMoisDeLanne = "assets/images/mois_annee/",
  imageUrlBasePremierMot = "assets/images/premier_mot/",
  imageUrlBasePresentation = "assets/images/presentation/",
- imageUrlBaseSalutation = "assets/audios/salutation/"
+ imageUrlBaseSalutation = "assets/images/salutation/"
  ;
