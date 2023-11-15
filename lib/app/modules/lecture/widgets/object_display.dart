@@ -23,7 +23,7 @@ class ObjectDisplay extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
       children: [
       Text(
-        objectList[currentObjet.value].text.tr,
+        objectList[currentObjet.value].text.tr ,
         style: itemStyle,
       ),
       SizedBox(
@@ -31,7 +31,9 @@ class ObjectDisplay extends StatelessWidget {
       ),
       Card(
         elevation: 10,
-        child: Image.asset(
+        child: objectList[currentObjet.value].imageUrl.isEmpty?
+        Text(objectList[currentObjet.value].text.tr,style: openTitleStyle,)
+        :Image.asset(
           objectList[currentObjet.value].imageUrl,
           width: lectureImageSizeHeight ,
           height: lectureImageSizeHeight ,
