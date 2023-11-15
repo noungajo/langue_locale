@@ -1,16 +1,16 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:reenamuna/app/modules/lecture/lecture_controller.dart';
-import 'package:reenamuna/app/utils/app_bar.dart';
 import 'package:sizer/sizer.dart';
 import '../../../constants/app_constants.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/size.dart';
 import '../../../constants/style.dart';
 import '../../internationalisation/inter_controller.dart';
+import '../../utils/app_bar.dart';
 import '../../utils/snackbar.dart';
 import '../home/widgets/drawer.dart';
+import 'lecture_controller.dart';
 import 'lecture_modele.dart';
 import 'widgets/bouton.dart';
 import 'package:audioplayers/audioplayers.dart';
@@ -60,75 +60,77 @@ class _LectureState extends State<Lecture> {
     return WillPopScope(
 
       onWillPop: ()async { 
+        if(lectureController.getPop()){
+          Navigator.pop(context);
+        }else{
 Get.offNamed("/home");
+
+        }
         return false;
        },
       child: Scaffold(
         appBar: appBar(widget.titre.tr, context),
         drawer: SizedBox(width: drawerWidth, child: drawer(context)),
-        body: SingleChildScrollView(
-            child: Container(
-              padding: EdgeInsets.only(top: size.height*0.03,left: size.width*0.1,right: size.width*0.1),
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: itemSpacer,
-                  ),
-                  enteteLecture(),
-                  SizedBox(
-                    height: itemSpacer * 2,
-                  ),
-                  InkWell(
-                      onTap: () {
-                        playAudio(
-                            objectList[currentObjet.value].audioMap[selectedValue]);
-                      },
-                      child: SizedBox(
-                       height: lectureImageSizeHeight*1.28,
-                        width: lectureImageSizeHeight,
-                        child: ObjectDisplay(
-                            objectList: objectList, currentObjet: currentObjet),
-                      )),
-                  SizedBox(
-                    height: itemSpacer * 4,
-                  ),
-                  //next/previous button
-                  SizedBox(
-                    width: lectureImageSize * 1.5,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        customIconButton(
-                          icon: Icons.arrow_back,
-                          iconSize: iconSize,
-                          couleur: lightAppbarColor,
-                          onPressed: () {
-                            if (currentObjet.value > 0) {
-                              currentObjet.value = currentObjet.value - 1;
-                            } else {
-                              showSnackBar(context, "min_atteint".tr, snackBartime);
-                            }
-                          },
-                        ),
-                        customIconButton(
-                          icon: Icons.arrow_forward,
-                          iconSize: iconSize,
-                          couleur: lightAppbarColor,
-                          onPressed: () {
-                            if (currentObjet.value < objectList.length - 1) {
-                              currentObjet.value = currentObjet.value + 1;
-                            } else {
-                              showSnackBar(context, "max_atteint".tr, snackBartime);
-                            }
-                          },
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            )),
+        body:SingleChildScrollView(
+  child: Center(
+    child: Container(
+      padding: EdgeInsets.symmetric(horizontal: size.width * 0.1, vertical: size.height * 0.03),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          SizedBox(height: itemSpacer),
+          enteteLecture(),
+          SizedBox(height: itemSpacer),
+          InkWell(
+            onTap: () {
+              playAudio(objectList[currentObjet.value].audioMap[selectedValue]);
+            },
+            child: SizedBox(
+              height: lectureImageSizeHeight * 1.36,
+              width: lectureImageSizeHeight,
+              child: ObjectDisplay(objectList: objectList, currentObjet: currentObjet),
+            ),
+          ),
+          SizedBox(height: itemSpacer * 3),
+          // next/previous button
+          SizedBox(
+            width: lectureImageSize * 1.5,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                customIconButton(
+                  icon: Icons.arrow_back,
+                  iconSize: iconSize,
+                  couleur: lightAppbarColor,
+                  onPressed: () {
+                    if (currentObjet.value > 0) {
+                      currentObjet.value = currentObjet.value - 1;
+                    } else {
+                      showSnackBar(context, "min_atteint".tr, snackBartime);
+                    }
+                  },
+                ),
+                customIconButton(
+                  icon: Icons.arrow_forward,
+                  iconSize: iconSize,
+                  couleur: lightAppbarColor,
+                  onPressed: () {
+                    if (currentObjet.value < objectList.length - 1) {
+                      currentObjet.value = currentObjet.value + 1;
+                    } else {
+                      showSnackBar(context, "max_atteint".tr, snackBartime);
+                    }
+                  },
+                ),
+              ],
+            ),
+          )
+        ],
       ),
+    ),
+  ),
+),
+),
     );
   }
 
