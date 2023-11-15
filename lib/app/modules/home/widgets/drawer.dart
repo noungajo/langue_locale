@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:reenamuna/app/modules/home/widgets/liste_lecture_objects_mois.dart';
-import 'package:reenamuna/app/modules/home/widgets/liste_lecture_objects_premier_mot.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/size.dart';
 import '../../../../constants/string.dart';
@@ -12,6 +10,8 @@ import '../../lecture/lecture_controller.dart';
 import 'liste_lecture_objects_animaux.dart';
 import 'liste_lecture_objects_compter.dart';
 import 'liste_lecture_objects_fruit.dart';
+import 'liste_lecture_objects_mois.dart';
+import 'liste_lecture_objects_premier_mot.dart';
 
 
 
@@ -32,7 +32,7 @@ Drawer drawer (BuildContext context){
           accountEmail: const Text(
             "",
           ),
-          currentAccountPicture:Image.asset(logoReenamuna),
+          currentAccountPicture:Image.asset(logoReenamuna,height: imageHeight,),
           
         ),
         
