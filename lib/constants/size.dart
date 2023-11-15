@@ -16,11 +16,12 @@ iconSize = 10.w,
  itemSpacer = 2.h,
  drawerWidth = 70.w,
  dropdownHeight = 5.h,
- dropdownWight = 25.w,
+ dropdownWight = 30.w,
  lectureImageSize = 70.w,
  lectureImageSizeHeight = 40.h,
 borderMiniRidusSize = 5.w,
-borderRadiusSize = 10.w
+borderRadiusSize = 10.w,
+imageHeight = 10.h
  ;
 
 var titleLarge = 18.sp,
