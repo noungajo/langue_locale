@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reenamuna/constants/style.dart';
+import '/constants/style.dart';
 
 import '../../../../constants/size.dart';
 
