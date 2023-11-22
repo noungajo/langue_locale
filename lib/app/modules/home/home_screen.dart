@@ -5,6 +5,7 @@ import 'package:sizer/sizer.dart';
 import '../../../constants/size.dart';
 import '../../../constants/string.dart';
 import '../../utils/app_bar.dart';
+import '../../utils/changeLanguageText.dart';
 import '../lecture/lecture.dart';
 import '../lecture/lecture_controller.dart';
 import 'widgets/drawer.dart';
@@ -35,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
       },
       child: Scaffold(
         
-        appBar: appBar("nom_projet".tr,context),
+        appBar: appBar("nom_projet".obs,context,changeLanguageButton()),
       drawer: SizedBox(
           width: drawerWidth,
           child: drawer(context)),
@@ -51,8 +52,9 @@ class _HomeScreenState extends State<HomeScreen> {
           textDecoration: 'premier_mot'.tr,
           callback: () {
             lectureController.setCurrentListeLecture(listeLecturePremierMot);
+                  lectureController.setCurrentTitle('premier_mot');
             lectureController.setPop(false);
-            Get.off(() => Lecture(titre: 'premier_mot'));
+            Get.off(() => Lecture());
           },
         ),
         HomeItem(
@@ -67,8 +69,9 @@ class _HomeScreenState extends State<HomeScreen> {
           textDecoration: 'animaux'.tr,
           callback: () {
             lectureController.setCurrentListeLecture(listeLectureAnimaux);
+                  lectureController.setCurrentTitle('animaux');
             lectureController.setPop(false);
-            Get.off(() => Lecture(titre: 'animaux'));
+            Get.off(() => Lecture());
           },
         ),
         HomeItem(
@@ -76,8 +79,9 @@ class _HomeScreenState extends State<HomeScreen> {
           textDecoration: 'compter'.tr,
           callback: () {
             lectureController.setCurrentListeLecture(listeLectureNombre);
+                  lectureController.setCurrentTitle('compter');
             lectureController.setPop(false);
-            Get.off(() => Lecture(titre: 'compter'));
+            Get.off(() => Lecture());
           },
         ),
         HomeItem(
@@ -85,8 +89,9 @@ class _HomeScreenState extends State<HomeScreen> {
           textDecoration: 'fruit'.tr,
           callback: () {
             lectureController.setCurrentListeLecture(listeLectureFruit);
+                  lectureController.setCurrentTitle('fruit');
             lectureController.setPop(false);
-            Get.off(() => Lecture(titre: 'fruit'));
+            Get.off(() => Lecture());
           },
         ),
         HomeItem(
@@ -94,8 +99,9 @@ class _HomeScreenState extends State<HomeScreen> {
           textDecoration: 'mois'.tr,
           callback: () {
             lectureController.setCurrentListeLecture(listeLectureMois);
+                  lectureController.setCurrentTitle('mois');
             lectureController.setPop(false);
-            Get.off(() => Lecture(titre: 'mois'));
+            Get.off(() => Lecture());
           },
         ),
       ],
