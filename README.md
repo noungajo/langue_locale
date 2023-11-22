@@ -1,26 +1,26 @@
-# Projet Reenamuna
+# Reenamuna Project
 
 ![Reenamuna Cover Image](https://github.com/noungajo/reenamouna/assets/74459608/660a74a2-9d59-46ec-bcb0-1d00c37ad686)
 
-## Description du Projet
+## Project Description
 
-Bienvenue dans Reenamuna, une initiative éducative et divertissante visant à faire découvrir et apprendre les langues camerounaises aux enfants et aux adultes. Ces langues sont des éléments essentiels de la riche culture du Cameroun. Reenamuna s'engage à rendre l'apprentissage linguistique aussi amusant, interactif et accessible que possible pour tous les apprenants.
+Welcome to Reenamuna, an educational and entertaining initiative designed to introduce and teach Cameroonian languages to both children and adults. These languages are essential elements of Cameroon's rich culture. Reenamuna is committed to making language learning as fun, interactive, and accessible as possible for all learners.
 
-Le nom du projet, "Ree Na Muna", puise son inspiration de la langue nufi gheu11, signifiant "langage", et de Na Muna du douala, signifiant "de l'enfant".
+The project's name, "Ree Na Muna," draws inspiration from the Nufi gheu11 language, meaning "language," and the Douala Na Muna, meaning "of the child."
 
 ## Sections
 
-1. [À Propos](a_propos.md) <!-- Explorez notre mission et nos objectifs -->
-2. [Langues Utilisées dans le MVP](langues_utilisees.md) <!-- Découvrez les langues spécifiques et les régions associées -->
-3. [Sections de l'Application](section_application.md) <!-- Plongez dans nos différentes rubriques éducatives -->
+1. [About Us](a_propos.md) <!-- Explore our mission and objectives -->
+2. [Languages Used in the MVP](langues_utilisees.md) <!-- Discover specific languages and associated regions -->
+3. [Application Sections](section_application.md) <!-- Dive into our various educational sections -->
 
-## Lien vers l'Application Déployée
+## Link to Deployed Application
 
-[Accéder à l'Application Reenamuna](lien_application_deployee) <!-- Découvrez l'expérience Reenamuna -->
+[Access the Reenamuna Application](lien_application_deployee) <!-- Experience Reenamuna -->
 
-[Free Images Compressor](https://imagecompressor.com/) <!-- Utilisez cet outil pour compresser vos images -->
+[Free Images Compressor](https://imagecompressor.com/) <!-- Use this tool to compress your images -->
 
 ---
 
-*Merci de découvrir Reenamuna et de faire partie de notre voyage éducatif!*
+*Thank you for exploring Reenamuna and being part of our educational journey!*
 
