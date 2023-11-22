@@ -17,8 +17,9 @@ titleLargeStyle= TextStyle(
       ),
   clickTextStyle = TextStyle(
         fontFamily: "lato",
+        fontSize: 10.sp,
         color: clickTextColor,
-                decoration: TextDecoration.underline,  
+               // decoration: TextDecoration.underline,  
         fontWeight: FontWeight.bold, 
       
       ),
@@ -53,5 +54,10 @@ titleLargeStyle= TextStyle(
         fontFamily: "lato",
         fontSize:  13.sp,
         color: lightTextDrawerColor,
+      ),
+      appBarTextButtonStyle = TextStyle(
+        fontFamily: "lato",
+        fontSize:  13.sp,
+        color: Colors.grey,
       )
       ;
