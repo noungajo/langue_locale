@@ -11,9 +11,9 @@ Le nom du projet, "Ree Na Muna", provient de la langue nufi gheu11, signifiant "
 ## Sections
 
 1. [À Propos](a_propos.md) <!-- Remplacez "lien_vers_apropos" par le lien vers la section À Propos -->
-2. [Langues Utilisées dans le MVP](lien_vers_langues) <!-- Remplacez "lien_vers_langues" par le lien vers la section Langues -->
-3. [Sections de l'Application](lien_vers_jeux) <!-- Remplacez "lien_vers_jeux" par le lien vers la section Jeux Educatifs -->
-4. [Application Reenamuna](lien_vers_application) <!-- Remplacez "lien_vers_application" par le lien vers l'application Reenamuna -->
+2. [Langues Utilisées dans le MVP](langues_utilisees.md) <!-- Remplacez "lien_vers_langues" par le lien vers la section Langues -->
+3. [Sections de l'Application](section_application.md) <!-- Remplacez "lien_vers_jeux" par le lien vers la section Jeux Educatifs -->
+4. [Application Reenamuna](application.md) <!-- Remplacez "lien_vers_application" par le lien vers l'application Reenamuna -->
 
 ## Lien vers l'Application Déployée
 
