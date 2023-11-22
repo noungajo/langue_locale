@@ -10,7 +10,7 @@ The project's name, "Ree Na Muna," draws inspiration from the Nufi gheu11 langua
 
 ## Sections
 
-1. [About Us](a_propos.md) <!-- Explore our mission and objectives -->
+1. [About Reenamuna](a_propos.md) <!-- Explore our mission and objectives -->
 2. [Languages Used in the MVP](langues_utilisees.md) <!-- Discover specific languages and associated regions -->
 3. [Application Sections](section_application.md) <!-- Dive into our various educational sections -->
 
