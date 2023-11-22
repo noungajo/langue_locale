@@ -13,7 +13,6 @@ Le nom du projet, "Ree Na Muna", puise son inspiration de la langue nufi gheu11,
 1. [À Propos](a_propos.md) <!-- Explorez notre mission et nos objectifs -->
 2. [Langues Utilisées dans le MVP](langues_utilisees.md) <!-- Découvrez les langues spécifiques et les régions associées -->
 3. [Sections de l'Application](section_application.md) <!-- Plongez dans nos différentes rubriques éducatives -->
-4. [Application Reenamuna](application.md) <!-- Explorez l'application et commencez votre voyage éducatif -->
 
 ## Lien vers l'Application Déployée
 
