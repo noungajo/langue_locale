@@ -1,36 +1,33 @@
-# Langues Utilisées dans le MVP
+# Languages Used in the MVP
 
-## Nufi ou Fè'éfè'é (Bafang)
+## Nufi or Fè'éfè'é (Bafang)
 
-**Région :** Ouest  
-**Département :** Hauts-Nkam
+**Region:** West  
+**Department:** Hauts-Nkam
 
-
-La langue Nufi, également appelée Bafang par les profane, est parlée dans la région de l'Ouest, principalement dans le 
-département des Hauts-Nkam. Elle joue un rôle essentiel dans la richesse culturelle de cette région.
+The Nufi language, also known as Bafang to the uninitiated, is spoken in the West region, primarily in the 
+Hauts-Nkam department. It plays an essential role in the cultural richness of this region.
 
 ## Douala
 
-**Région :** Littoral
+**Region:** Littoral
 
-
-Le Douala est la langue principale de la région du Littoral. Elle est porteuse d'une histoire riche et est essentielle à la compréhension de la culture locale.
+Douala is the main language of the Littoral region. It carries a rich history and is essential for understanding the local culture.
 
 ## Medjumbe (Bangangté)
 
-**Région :** Ouest  
-**Département :** Ndé
+**Region:** West  
+**Department:** Ndé
 
-
-La langue Medjumbe, souvent associée à Bangangté, est parlée dans la région de l'Ouest, plus précisément dans 
-le département du Ndé. Elle contribue significativement à la diversité linguistique de cette région.
+The Medjumbe language, often associated with Bangangté, is spoken in the West region, specifically in 
+the Ndé department. It significantly contributes to the linguistic diversity of this region.
 
 ## Yambassa
 
-**Région :** Centre
-**Département :** Mbam-et-Inoubou
+**Region:** Centre
+**Department:** Mbam-et-Inoubou
 
-Le Yambassa est une langue parlée dans la région du Centre au Cameroun plus précisément dans 
-le département du Mbam-et-Inoubou.  Elle contribue significativement à la diversité linguistique de cette région.
+Yambassa is a language spoken in the Centre region of Cameroon, specifically in 
+the Mbam-et-Inoubou department. It significantly contributes to the linguistic diversity of this region.
 
-[Retour à l'Accueil](README.md) <!-- Remplacez "lien_vers_accueil" par le lien vers la page d'accueil -->
+[Back to Home](README.md) <!-- Replace "lien_vers_accueil" with the link to the home page -->
