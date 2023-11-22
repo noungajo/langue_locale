@@ -32,7 +32,11 @@ Drawer drawer (BuildContext context){
           accountEmail: const Text(
             "",
           ),
-          currentAccountPicture:Image.asset(logoReenamuna,height: imageHeight,),
+          currentAccountPicture:InkWell(
+            onTap: (){
+              Navigator.pop(context);
+            },
+            child:Image.asset(logoReenamuna,height: imageHeight,)),
           
         ),
         
@@ -46,7 +50,9 @@ Drawer drawer (BuildContext context){
                   
                   Navigator.pop(context);
                   lectureController.setCurrentListeLecture(listeLecturePremierMot);
-                  Get.off(() =>  Lecture(titre:'premier_mot'));
+                  lectureController.setCurrentTitle('premier_mot');
+                  
+                  Get.off(() =>  Lecture());
                 },
               ),
             ),
@@ -69,7 +75,8 @@ Drawer drawer (BuildContext context){
                 onTap: () {
                    Navigator.pop(context);
                    lectureController.setCurrentListeLecture(listeLectureNombre);
-           Get.off(() =>  Lecture(titre:'animaux'));
+                  lectureController.setCurrentTitle('compter');
+           Get.off(() =>  Lecture());
                 },
                        ),
              ),
@@ -81,7 +88,8 @@ Drawer drawer (BuildContext context){
                 onTap: () {
               Navigator.pop(context);
               lectureController.setCurrentListeLecture(listeLectureAnimaux);
-            Get.off(() =>  Lecture(titre: 'animaux',));
+                  lectureController.setCurrentTitle('animaux');
+            Get.off(() =>  Lecture());
             
                 },
               ),
@@ -95,7 +103,8 @@ Drawer drawer (BuildContext context){
                   
               Navigator.pop(context);
                lectureController.setCurrentListeLecture(listeLectureFruit);
-Get.off(() =>  Lecture(titre:'fruit'));
+                  lectureController.setCurrentTitle('fruit');
+Get.off(() =>  Lecture());
                 },
               ),
             ),
@@ -106,8 +115,9 @@ Get.off(() =>  Lecture(titre:'fruit'));
                 title:  Text('mois'.tr,style: bodySmallStyle,),
                 onTap: () {
                   lectureController.setCurrentListeLecture(listeLectureMois);
+                  lectureController.setCurrentTitle('mois');
                   Navigator.pop(context);
-                  Get.off(() =>  Lecture(titre:'mois'));
+                  Get.off(() =>  Lecture());
                 },
               ),
             ),
