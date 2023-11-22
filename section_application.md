@@ -49,4 +49,4 @@ Explore the months of the year in the Cameroonian language. Follow our dedicated
 
 Navigate through these different sections for an engaging learning experience. Each section is designed to provide you with a comprehensive immersion in Cameroonian languages and culture.
 
-[Back to Home](lien_vers_accueil) <!-- Replace "lien_vers_accueil" with the link to the home page -->
+[Back to Home](README.md) <!-- Replace "lien_vers_accueil" with the link to the home page -->
