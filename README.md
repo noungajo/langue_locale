@@ -18,7 +18,6 @@ The project's name, "Ree Na Muna," draws inspiration from the Nufi gheu11 langua
 
 [Access the Reenamuna Application](https://github.com/noungajo/reenamouna/releases/tag/v1.1) <!-- Experience Reenamuna -->
 
-[Free Images Compressor](https://imagecompressor.com/) <!-- Use this tool to compress your images -->
 
 ---
 
