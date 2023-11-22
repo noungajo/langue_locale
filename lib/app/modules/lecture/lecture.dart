@@ -20,8 +20,9 @@ import 'widgets/object_display.dart';
 
 // ignore: must_be_immutable
 class Lecture extends StatefulWidget {
-  Lecture({required this.titre,super.key});
-  String titre;
+  Lecture({super.key});
+  
+  
   @override
   State<Lecture> createState() => _LectureState();
 }
@@ -31,10 +32,12 @@ class _LectureState extends State<Lecture> {
   var lectureController = Get.find<LectureController>();
   final player = AudioPlayer();
   List<LectureModele> objectList = [];
-  RxInt currentObjet = 0.obs;
+  RxString currentTitle = "".obs;
   @override
   void initState() {
     objectList = lectureController.getCurrentListeLecture();
+    currentTitle = lectureController.getCurrentTitle();
+    
     super.initState();
   }
 
@@ -69,7 +72,7 @@ Get.offNamed("/home");
         return false;
        },
       child: Scaffold(
-        appBar: appBar(widget.titre.tr, context),
+        appBar: appBar(currentTitle, context,Container()),
         drawer: SizedBox(width: drawerWidth, child: drawer(context)),
         body:SingleChildScrollView(
   child: Center(
@@ -83,15 +86,14 @@ Get.offNamed("/home");
           SizedBox(height: itemSpacer),
           InkWell(
             onTap: () {
-              playAudio(objectList[currentObjet.value].audioMap[selectedValue]);
+              playAudio(objectList[lectureController. currentObjet.value].audioMap[selectedValue]);
             },
             child: SizedBox(
-              height: lectureImageSizeHeight * 1.36,
+              height: lectureImageSizeHeight * 1.45,
               width: lectureImageSizeHeight,
-              child: ObjectDisplay(objectList: objectList, currentObjet: currentObjet),
+              child: ObjectDisplay(objectList: objectList, ),
             ),
           ),
-          SizedBox(height: itemSpacer * 3),
           // next/previous button
           SizedBox(
             width: lectureImageSize * 1.5,
@@ -103,8 +105,8 @@ Get.offNamed("/home");
                   iconSize: iconSize,
                   couleur: lightAppbarColor,
                   onPressed: () {
-                    if (currentObjet.value > 0) {
-                      currentObjet.value = currentObjet.value - 1;
+                    if (lectureController.currentObjet.value > 0) {
+                      lectureController.currentObjet.value = lectureController.currentObjet.value - 1;
                     } else {
                       showSnackBar(context, "min_atteint".tr, snackBartime);
                     }
@@ -115,8 +117,8 @@ Get.offNamed("/home");
                   iconSize: iconSize,
                   couleur: lightAppbarColor,
                   onPressed: () {
-                    if (currentObjet.value < objectList.length - 1) {
-                      currentObjet.value = currentObjet.value + 1;
+                    if (lectureController.currentObjet.value < objectList.length - 1) {
+                      lectureController.currentObjet.value = lectureController.currentObjet.value + 1;
                     } else {
                       showSnackBar(context, "max_atteint".tr, snackBartime);
                     }
