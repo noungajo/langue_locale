@@ -1,21 +1,25 @@
+import 'package:Reenamuna/app/modules/lecture/lecture_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
+import 'package:sizer/sizer.dart';
 
 import '../../../../constants/size.dart';
 import '../../../../constants/string.dart';
 import '../../../../constants/style.dart';
 import '../lecture_modele.dart';
 
+// ignore: must_be_immutable
 class ObjectDisplay extends StatelessWidget {
-  const ObjectDisplay({
+   ObjectDisplay({
     super.key,
     required this.objectList,
-    required this.currentObjet,
+    //required this.currentObjet,
   });
 
   final List<LectureModele> objectList;
-  final RxInt currentObjet;
-
+ // final RxInt currentObjet;
+var lectureController = Get.find<LectureController>();
   @override
   Widget build(BuildContext context) {
     return Obx(
@@ -23,7 +27,7 @@ class ObjectDisplay extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
       children: [
       Text(
-        objectList[currentObjet.value].text.tr ,
+        objectList[lectureController.currentObjet.value].text.tr ,
         style: itemStyle,
       ),
       SizedBox(
@@ -31,10 +35,13 @@ class ObjectDisplay extends StatelessWidget {
       ),
       Card(
         elevation: 10,
-        child: objectList[currentObjet.value].imageUrl.isEmpty?
-        Text(objectList[currentObjet.value].text.tr,style: openTitleStyle,)
+        child: objectList[lectureController.currentObjet.value].imageUrl.isEmpty?
+        SizedBox(
+          width: lectureImageSizeHeight ,
+          height: lectureImageSizeHeight ,
+          child: Center(child: Text(objectList[lectureController.currentObjet.value].text.tr,style: openTitleStyle,)))
         :Image.asset(
-          objectList[currentObjet.value].imageUrl,
+          objectList[lectureController.currentObjet.value].imageUrl,
           width: lectureImageSizeHeight ,
           height: lectureImageSizeHeight ,
           fit: BoxFit
@@ -47,10 +54,15 @@ class ObjectDisplay extends StatelessWidget {
           },
         ),
       ),
-        SizedBox(
-        height: itemSpacer*0.5,
-      ),
-      Text("clique_ici".tr,style: clickTextStyle,)
+     
+      Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Lottie.asset(lottieListining, height: 10.h,
+           fit: BoxFit.scaleDown),
+          Text("ecouter".tr,style: clickTextStyle,),
+        ],
+      )
       ],
       ),
     );
