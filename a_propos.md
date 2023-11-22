@@ -1,24 +1,21 @@
-# À Propos de Reenamuna
+# About Reenamuna
 
-Bienvenue sur Reenamuna, une initiative éducative passionnante qui ouvre les portes de la découverte des langues camerounaises. Notre projet est né de la conviction que la richesse culturelle d'un pays réside
-dans la diversité de ses langues, et nous sommes fiers de contribuer à la préservation et à la célébration de cette diversité.
+Welcome to Reenamuna, an exciting educational initiative that opens the doors to discovering Cameroonian languages. Our project is born from the belief that the cultural richness of a country lies in the diversity of its languages, and we take pride in contributing to the preservation and celebration of this diversity.
 
-## Objectif
+## Objective
 
-Notre objectif est de rendre l'apprentissage des langues camerounaises aussi ludique qu'instructif. Que vous soyez un enfant curieux ou un adulte avide de connaissances, 
-Reenamuna vous offre une expérience d'apprentissage interactive et amusante.
+Our goal is to make learning Cameroonian languages as enjoyable as it is informative. Whether you are a curious child or a knowledge-hungry adult, Reenamuna offers you an interactive and fun learning experience.
 
 ## Ree Na Muna
 
-Le nom "Ree Na Muna" provient des langues nufi gheu11 et douala, symbolisant le langage de l'enfant. Nous croyons en 
-l'importance de donner aux enfants les moyens de comprendre et d'apprécier leur patrimoine linguistique dès le plus jeune âge.
+The name "Ree Na Muna" comes from the Nufi gheu11 and Douala languages, symbolizing the language of the child. We believe in empowering children to understand and appreciate their linguistic heritage from a young age.
 
-## Notre Mission
+## Our Mission
 
-- **Éduquer :** Fournir des ressources éducatives pour apprendre les langues camerounaises de manière attrayante.
-- **Divertir :** Intégrer des éléments ludiques pour rendre l'apprentissage amusant et stimulant.
-- **Connecter :** Favoriser la connexion entre les apprenants, les langues et la culture camerounaise.
+- **Educate:** Provide educational resources to learn Cameroonian languages in an engaging manner.
+- **Entertain:** Integrate playful elements to make learning fun and stimulating.
+- **Connect:** Foster a connection between learners, languages, and Cameroonian culture.
 
-Explorez Reenamuna et plongez dans un voyage linguistique enrichissant !
+Explore Reenamuna and dive into a rewarding linguistic journey!
 
-[Retour à l'Accueil](README.md) <!-- Remplacez "lien_vers_accueil" par le lien vers la page d'accueil -->
+[Back to Home](README.md) <!-- Replace "lien_vers_accueil" with the link to the home page -->
