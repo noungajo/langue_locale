@@ -1,0 +1,194 @@
+// Mes premiers mots
+Maman
+Ma mère
+Oui
+Non
+Pourquoi
+Parce-que
+Le sein
+Les seins
+Le lait
+La tête
+Les oreilles
+Les yeux
+La main
+La bouche
+Les dents
+La langue
+Le pied
+Le ventre
+C'est qui ?
+C'est moi !
+C'est quoi ?
+
+// Compter
+Zéro
+Un
+Deux
+Trois
+Quatre
+Cinq
+Six
+Sept
+Huit
+Neuf
+Dix
+Onze
+Douze
+Treize
+Quatorze
+Quinze
+Seize
+Dix-sept
+Dix-huit
+Dix-neuf
+Vingt
+Trente
+Quarante
+Cinquante
+Soixante
+Soixante-dix
+Quatre-vingts
+Quatre-vingt-dix
+Cent
+Deux cents
+Trois cents
+Quatre cents
+Cinq cents
+Six cents
+Sept cents
+Huit cents
+Neuf cents
+Mille
+
+// Animaux
+L'abeille
+La chèvre
+L'aigle
+La mouche
+L'antilope
+La panthère
+La perdrix
+La poule
+La queue
+La souris
+La tortue
+La vache
+La vipère
+Le bélier
+Le buffle
+Le bœuf
+Le caméléon
+Le cancrelat
+Le cheval
+Le chien
+Le coq
+Le hibou
+L'éléphant
+Le lièvre
+Le lion
+Le loup
+Le mouton
+Le papillon
+Le poussin
+Le rat
+Le renard
+Le serpent
+Le singe
+L'hippopotame
+L'œuf
+L'oiseau
+La corne
+La peau
+Le poil
+Une écaille
+Une fourmi
+Une girafe
+Une patte
+Une plume
+Un poisson
+Un zèbre
+
+// Fruits
+L'avocat
+L'ananas
+La banane
+Le citron
+Le corossol
+La goyave
+La mangue
+La noix de coco
+L'orange
+Le palmiste
+La papaye
+La pomme de terre
+La prune
+La tomate
+
+// Salutations
+Bonjour ma grande sœur Mbouani
+Bonjour mon petit frère Lonam
+Comment ça va ?
+Ça va bien, merci
+Salut papa
+Salut mon enfant, comment ça va ?
+Ça va bien, papa
+Et toi alors ?
+Ça va bien, mon enfant
+Bonsoir maman
+Bonsoir mon enfant, comment ça va ?
+Ça va bien, maman. Et toi ?
+Ça va bien, mon enfant, merci
+Bonne nuit mon frère Lonam
+Bonne nuit ma sœur Mbouani
+Bonne nuit papa, bonne nuit maman
+Nous vous remercions
+Bonne nuit à vous, mes enfants, demain
+
+// Présentation
+Salut ma sœur
+Je te salue
+Comment t'appelles-tu ?
+Je m'appelle Ndisie
+Et toi, comment t'appelles-tu ?
+Je m'appelle Lonam
+Tu as un joli nom
+Où habites-tu ?
+J'habite à Bana
+Et toi, où habites-tu ?
+J'habite à Banoné
+D'où es-tu originaire ?
+Je suis originaire de Nkwè'nzhi
+Et toi, d'où es-tu originaire ?
+Je suis originaire de Baboutcheu
+Quel âge as-tu ?
+J'ai 7 ans
+Et toi, quel âge as-tu ?
+J'ai 9 ans
+Quel est le nom de ton père ?
+Mon père s'appelle Fienkak
+Et toi, comment s'appelle ton père ?
+Le nom de mon père est Jiande
+Quel est le nom de ta mère ?
+Le nom de ma mère est Kena
+Enchanté de faire ta connaissance
+Le plaisir est le mien
+À la prochaine ma sœur
+À la prochaine s'il plaît à Dieu
+Au-revoir
+Au-revoir mon frère
+
+// Mois de l'année
+Janvier
+Février
+Mars
+Avril
+Mai
+Juin
+Juillet
+Août
+Septembre
+Octobre
+Novembre
+Décembre
+
