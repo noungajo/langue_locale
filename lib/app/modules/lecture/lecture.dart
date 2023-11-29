@@ -1,10 +1,11 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import '../../../constants/app_constants.dart';
-import '../../../constants/colors.dart';
 import '../../../constants/size.dart';
+import '../../../constants/string.dart';
 import '../../../constants/style.dart';
 import '../../internationalisation/inter_controller.dart';
 import '../../utils/app_bar.dart';
@@ -14,8 +15,6 @@ import 'lecture_controller.dart';
 import 'lecture_modele.dart';
 import 'widgets/bouton.dart';
 import 'package:audioplayers/audioplayers.dart';
-
-import 'widgets/custom_icon_button.dart';
 import 'widgets/object_display.dart';
 
 // ignore: must_be_immutable
@@ -84,23 +83,41 @@ Get.offNamed("/home");
           SizedBox(height: itemSpacer),
           enteteLecture(),
           SizedBox(height: itemSpacer),
-          InkWell(
-            onTap: () {
-              playAudio(objectList[lectureController. currentObjet.value].audioMap[selectedValue]);
-            },
-            child: SizedBox(
-              height: lectureImageSizeHeight * 1.45,
-              width: lectureImageSizeHeight,
-              child: ObjectDisplay(objectList: objectList, ),
-            ),
+        InkWell(
+          onTap: () {
+            playAudio(objectList[lectureController. currentObjet.value].audioMap[selectedValue]);
+          },
+          child: SizedBox(
+            height: lectureImageSizeHeight * 1.45,
+            width: lectureImageSizeHeight,
+            child: ObjectDisplay(objectList: objectList, ),
           ),
+        ),
           // next/previous button
           SizedBox(
             width: lectureImageSize * 1.5,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                customIconButton(
+                IconButton(onPressed: () {
+                    if (lectureController.currentObjet.value > 0) {
+                      lectureController.currentObjet.value = lectureController.currentObjet.value - 1;
+                    } else {
+                      showSnackBar(context, "min_atteint".tr, snackBartime);
+                    }
+                  }, 
+                  iconSize: iconSize,
+                  icon: SvgPicture.asset(previousArrow,width: iconSize)),
+                  IconButton(onPressed: () {
+                    if (lectureController.currentObjet.value < objectList.length - 1) {
+                      lectureController.currentObjet.value = lectureController.currentObjet.value + 1;
+                    } else {
+                      showSnackBar(context, "max_atteint".tr, snackBartime);
+                    }
+                  },
+                  iconSize: iconSize,
+                  icon: SvgPicture.asset(nextArrow,width: iconSize)),
+              /*  customIconButton(
                   icon: Icons.arrow_back,
                   iconSize: iconSize,
                   couleur: lightAppbarColor,
@@ -123,7 +140,7 @@ Get.offNamed("/home");
                       showSnackBar(context, "max_atteint".tr, snackBartime);
                     }
                   },
-                ),
+                ),*/
               ],
             ),
           )
@@ -141,11 +158,12 @@ Get.offNamed("/home");
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         changeLanguageButton(),
-        Icon(
+SvgPicture.asset(languageArrow,width: iconSize,fit: BoxFit.fill),
+     /*   Icon(
           Icons.arrow_forward_sharp,
           size: 10.w,
           color: Colors.black,
-        ),
+        ),*/
         buildDropdownButton(),
       ],
     );
@@ -163,6 +181,7 @@ Get.offNamed("/home");
   Widget buildDropdownButton() {
     return DropdownButtonHideUnderline(
       child: DropdownButton2<String>(
+        iconStyleData:IconStyleData(icon: Icon(Icons.arrow_drop_down_rounded),iconSize: iconSize*0.9) ,
         isExpanded: true,
         items: items
             .map((String item) => DropdownMenuItem<String>(
