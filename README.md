@@ -16,7 +16,7 @@ The project's name, "Ree Na Muna," draws inspiration from the Nufi gheu11 langua
 
 ## Link to Deployed Application
 
-[Access the Reenamuna Application](https://github.com/noungajo/reenamouna/releases/tag/v1.1) <!-- Experience Reenamuna -->
+[Access the Reenamuna Application](https://github.com/noungajo/reenamouna/releases/tag/v1.2-stable) <!-- Experience Reenamuna -->
 
 
 ---
