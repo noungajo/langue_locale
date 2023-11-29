@@ -1,0 +1,34 @@
+
+
+
+import '../../../../constants/app_constants.dart';
+import '../../lecture/lecture_modele.dart';
+
+/*
+0 -> "Fè'éfè'é"
+1 -> "Douala"
+2 -> "Bangangté"
+3 -> "Yambassa"
+4 ->  "Étón"
+*/
+int indexNufi = 0,indexDouala = 1, indexBangante = 2, indexYambassa = 3, indexEton = 4;
+
+
+var listeLectureFruit = [
+  LectureModele(text: "ananas", imageUrl: "${imageUrlBasefruit}ananas.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}ananas_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}ananas_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}ananas_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}ananas_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}ananas_eton.ogg"}),
+  LectureModele(text: "avocat", imageUrl: "${imageUrlBasefruit}avocat.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}avocat_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}avocat_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}avocat_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}avocat_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}avocat_eton.ogg"}),
+  LectureModele(text: "banane", imageUrl: "${imageUrlBasefruit}banane.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}banane_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}banane_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}banane_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}banane_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}banane_eton.ogg"}),
+  LectureModele(text: "citron", imageUrl: "${imageUrlBasefruit}citron.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}citron_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}citron_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}citron_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}citron_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}citron_eton.ogg"}),
+  LectureModele(text: "corossol", imageUrl: "${imageUrlBasefruit}corossol.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}corossol_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}corossol_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}corossol_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}corossol_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}corossol_eton.ogg"}),
+  LectureModele(text: "goyave", imageUrl: "${imageUrlBasefruit}goyave.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}goyave_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}goyave_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}goyave_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}goyave_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}goyave_eton.ogg"}),
+  LectureModele(text: "mangue", imageUrl: "${imageUrlBasefruit}mangue.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}mangue_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}mangue_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}mangue_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}mangue_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}mangue_eton.ogg"}),
+  LectureModele(text: "noix_de_coco", imageUrl: "${imageUrlBasefruit}noix_de_coco.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}noix_de_coco_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}noix_de_coco_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}noix_de_coco_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}noix_de_coco_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}noix_de_coco_eton.ogg"}),
+  LectureModele(text: "orange", imageUrl: "${imageUrlBasefruit}orange.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}orange_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}orange_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}orange_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}orange_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}orange_eton.ogg"}),
+  LectureModele(text: "palmiste", imageUrl: "${imageUrlBasefruit}palmiste.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}palmiste_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}palmiste_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}palmiste_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}palmiste_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}palmiste_eton.ogg"}),
+  LectureModele(text: "papaye", imageUrl: "${imageUrlBasefruit}papaye.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}papaye_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}papaye_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}papaye_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}papaye_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}papaye_eton.ogg"}),
+
+  LectureModele(text: "pomme_de_terre", imageUrl: "${imageUrlBasefruit}pomme_de_terre.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}pomme_de_terre_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}pomme_de_terre_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}pomme_de_terre_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}pomme_de_terre_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}pomme_de_terre_eton.ogg"}),
+  LectureModele(text: "prune", imageUrl: "${imageUrlBasefruit}prune.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}prune_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}prune_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}prune_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}prune_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}prune_eton.ogg"}),
+  LectureModele(text: "tomate", imageUrl: "${imageUrlBasefruit}tomate.jpeg",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBasefruit}tomate_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBasefruit}tomate_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBasefruit}tomate_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBasefruit}tomate_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBasefruit}tomate_eton.ogg"}),
+  
+];

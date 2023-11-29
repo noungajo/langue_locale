@@ -1,0 +1,30 @@
+
+
+import '../../../../constants/app_constants.dart';
+import '../../lecture/lecture_modele.dart';
+
+/*
+0 -> "Fè'éfè'é"
+1 -> "Douala"
+2 -> "Bangangté"
+3 -> "Yambassa"
+4 ->  "Étón"
+*/
+int indexNufi = 0,indexDouala = 1, indexBangante = 2, indexYambassa = 3, indexEton = 4;
+
+
+var listeLectureMois = [
+  LectureModele(text: "janvier", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}janvier_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}janvier_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}janvier_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}janvier_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}janvier_eton.ogg"}),
+  LectureModele(text: "fevrier", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}fevrier_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}fevrier_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}fevrier_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}fevrier_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}fevrier_eton.ogg"}),
+  LectureModele(text: "mars", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}mars_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}mars_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}mars_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}mars_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}mars_eton.ogg"}),
+  LectureModele(text: "avril", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}avril_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}avril_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}avril_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}avril_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}avril_eton.ogg"}),
+  LectureModele(text: "mai", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}mai_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}mai_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}mai_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}mai_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}mai_eton.ogg"}),
+  LectureModele(text: "juin", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}juin_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}juin_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}juin_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}juin_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}juin_eton.ogg"}),
+  LectureModele(text: "juillet", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}juillet_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}juillet_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}juillet_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}juillet_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}juillet_eton.ogg"}),
+  LectureModele(text: "aout", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}aout_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}aout_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}aout_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}aout_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}aout_eton.ogg"}),
+  LectureModele(text: "septembre", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}septembre_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}septembre_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}septembre_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}septembre_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}septembre_eton.ogg"}),
+  LectureModele(text: "octobre", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}octobre_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}octobre_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}octobre_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}octobre_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}octobre_eton.ogg"}),
+  LectureModele(text: "novembre", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}novembre_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}novembre_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}novembre_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}novembre_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}novembre_eton.ogg"}),
+  LectureModele(text: "decembre", imageUrl: "",audioMap: {languePrisEnCharge[indexNufi]:"${audioUrlBaseMoisDeLanne}decembre_nufi.ogg",languePrisEnCharge[indexDouala]:"${audioUrlBaseMoisDeLanne}decembre_dla.ogg",languePrisEnCharge[indexBangante]:"${audioUrlBaseMoisDeLanne}decembre_bgte.ogg",languePrisEnCharge[indexYambassa]:"${audioUrlBaseMoisDeLanne}decembre_yambas.ogg",languePrisEnCharge[indexEton]:"${audioUrlBaseMoisDeLanne}decembre_eton.ogg"}),
+
+];
